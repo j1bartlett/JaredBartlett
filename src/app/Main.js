@@ -14,7 +14,7 @@ export default class Main extends React.Component {
           <nav>
             <ul>
               <li>
-                <a href="/">Home</a>
+                <a href="/">Homes</a>
               </li>
 
               <li>
