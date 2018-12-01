@@ -9,7 +9,7 @@ import { injectGlobal } from 'styled-components'
 import Main from './App/Main'
 
 // Global style
-injectGlobal`
+/*injectGlobal`
   html,
   body,
   #app,
@@ -36,7 +36,7 @@ injectGlobal`
     margin: 0;
     font: 1rem / 1.414 arial, sans-serif;
   }
-`
+`*/
 
 const wrapper = document.getElementById('app')
 

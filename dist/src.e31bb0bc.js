@@ -31590,8 +31590,74 @@ if ("development" !== 'production' && "development" !== 'test' && typeof window 
 var _default = styled;
 exports.default = _default;
 },{"stylis/stylis.min":"../node_modules/stylis/stylis.min.js","stylis-rule-sheet":"../node_modules/stylis-rule-sheet/index.js","react":"../node_modules/react/index.js","@emotion/unitless":"../node_modules/@emotion/unitless/dist/unitless.browser.esm.js","react-is":"../node_modules/react-is/index.js","memoize-one":"../node_modules/memoize-one/dist/memoize-one.esm.js","prop-types":"../node_modules/prop-types/index.js","react-dom":"../node_modules/react-dom/index.js","@emotion/is-prop-valid":"../node_modules/@emotion/is-prop-valid/dist/is-prop-valid.esm.js","process":"../node_modules/process/browser.js"}],"App/Main.js":[function(require,module,exports) {
+"use strict";
 
-},{}],"index.js":[function(require,module,exports) {
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _reactRouterDom = require("react-router-dom");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+// import About from './pages/About'
+// import Contact from './pages/Contact'
+// import Home from './pages/Home'
+// import Portfolio from './pages/Portfolio'
+var Main =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(Main, _React$Component);
+
+  function Main() {
+    _classCallCheck(this, Main);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(Main).apply(this, arguments));
+  }
+
+  _createClass(Main, [{
+    key: "render",
+    value: function render() {
+      return _react.default.createElement("div", {
+        className: "wrapper"
+      }, _react.default.createElement("header", null, _react.default.createElement("nav", null, _react.default.createElement("ul", null, _react.default.createElement("li", null, _react.default.createElement("a", {
+        href: "/"
+      }, "Home")), _react.default.createElement("li", null, _react.default.createElement("a", {
+        href: "/about"
+      }, "About")), _react.default.createElement("li", null, _react.default.createElement("a", {
+        href: "/portfolio"
+      }, "Portfolio")), _react.default.createElement("li", null, _react.default.createElement("a", {
+        href: "/contact"
+      }, "Contact"))))));
+    }
+  }]);
+
+  return Main;
+}(_react.default.Component);
+
+exports.default = Main;
+},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/es/index.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
@@ -31606,20 +31672,38 @@ var _Main = _interopRequireDefault(require("./App/Main"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  html,\n  body,\n  #app,\n  .wrapper {\n    min-height: 100vh;\n    height: 100%;\n  }\n\n  html {\n    box-sizing: border-box;\n    font-size: 100%;\n  }\n\n  * {\n    &,\n    &::after,\n    &::before {\n      box-sizing: inherit;\n    }\n  }\n\n  body {\n    padding: 0;\n    margin: 0;\n    font: 1rem / 1.414 arial, sans-serif;\n  }\n"]);
-
-  _templateObject = function _templateObject() {
-    return data;
-  };
-
-  return data;
-}
-
-function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
-
+// index.js
+// import injectGlobal helper
 // Global style
-(0, _styledComponents.injectGlobal)(_templateObject());
+
+/*injectGlobal`
+  html,
+  body,
+  #app,
+  .wrapper {
+    min-height: 100vh;
+    height: 100%;
+  }
+
+  html {
+    box-sizing: border-box;
+    font-size: 100%;
+  }
+
+  * {
+    &,
+    &::after,
+    &::before {
+      box-sizing: inherit;
+    }
+  }
+
+  body {
+    padding: 0;
+    margin: 0;
+    font: 1rem / 1.414 arial, sans-serif;
+  }
+`*/
 var wrapper = document.getElementById('app');
 
 var App = function App() {
@@ -31654,7 +31738,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64362" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53133" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
