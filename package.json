@@ -16,7 +16,7 @@
   "main": "./src/index.js",
   "scripts": {
     "build": "parcel build ./src/index.html",
-    "start": "parcel ./src/index.html -p 8080"
+    "start": "parcel ./src/index.html -p 80"
   },
   "author": "Your name",
   "license": "MIT",
