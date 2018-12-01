@@ -6,7 +6,7 @@ import { BrowserRouter } from 'react-router-dom'
 // import injectGlobal helper
 import { injectGlobal } from 'styled-components'
 
-import Main from './App/Main'
+import Main from './App/Main.js'
 
 // Global style
 injectGlobal`
