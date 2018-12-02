@@ -7,7 +7,7 @@ const Button = styled.button`
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
-  color: #fff;
+  color: #666;
   background: transparent;
   border: 2px solid;
   cursor: pointer;

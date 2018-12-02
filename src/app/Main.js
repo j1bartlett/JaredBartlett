@@ -1,41 +1,20 @@
 import React from 'react'
 import { Route } from 'react-router-dom'
+import Home from './pages/Home'
+import About from './pages/About'
+import Portfolio from './pages/Portfolio'
+import Contact from './pages/Contact'
 
-// import About from './pages/About'
-// import Contact from './pages/Contact'
-// import Home from './pages/Home'
-// import Portfolio from './pages/Portfolio'
-
+import Nav from './components/Nav'
 export default class Main extends React.Component {
   render () {
     return (
       <div className="wrapper">
-        <header>
-          <nav>
-            <ul>
-              <li>
-                <a href="/">Homes</a>
-              </li>
-
-              <li>
-                <a href="/about">About</a>
-              </li>
-
-              <li>
-                <a href="/portfolio">Portfolio</a>
-              </li>
-
-              <li>
-                <a href="/contact">Contact</a>
-              </li>
-            </ul>
-          </nav>
-        </header>
-
-        {/* <Route exact={true} path="/" component={Home}/> */}
-        {/* <Route path="/about" component={About}/> */}
-        {/* <Route path="/contact" component={Contact}/> */}
-        {/* <Route path="/portfolio" component={Portfolio}/> */}
+    <Nav />
+        <Route exact={true} path="/" component={Home}/>
+        <Route path="/about" component={About}/>
+        <Route path="/portfolio" component={Portfolio}/>
+        <Route path="/contact" component={Contact}/>
       </div>
     )
   }
