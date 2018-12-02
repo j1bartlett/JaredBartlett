@@ -55,51 +55,40 @@ export default class Contact extends React.Component {
     return (
       <Section centered>
         <Container>
-          <Heading>Say hello</Heading>
+          <Heading>Say Hello</Heading>
 
-          <Text>I'm available for freelance work. If you are interested in a new project, collaboration, or just to chat, feel free to contact me.</Text>
+          <Text>I'd love to discuss new opportunities. If you are interested in a new project, collaboration, or just to chat, feel free to contact me.</Text>
 
-          <ContactLink href="mailto:email@example.com">email@example.com</ContactLink>
+          <ContactLink href="mailto:jared@rzn8.com">jared@jared.com</ContactLink>
 
           <Text>Follow me on the web:</Text>
 
           <SocialMediaList>
+           
             <li>
-              <Link href="">
-                <AwesomeIcon icon="twitter" />
-              </Link>
-            </li>
-
-            <li>
-              <Link href="">
+              <Link href="https://www.linkedin.com/in/jaredbartlett/">
                 <AwesomeIcon icon="linkedin" />
               </Link>
             </li>
 
+           
             <li>
-              <Link href="">
-                <AwesomeIcon icon="behance" />
-              </Link>
-            </li>
-
-            <li>
-              <Link href="">
-                <AwesomeIcon icon="dribbble" />
-              </Link>
-            </li>
-
-            <li>
-              <Link href="">
+              <Link href="https://github.com/j1bartlett">
                 <AwesomeIcon icon="github" />
               </Link>
             </li>
 
             <li>
-              <Link href="">
-                <AwesomeIcon icon="codepen" />
+              <Link href="https://www.facebook.com/jared.bartlett2">
+                <AwesomeIcon icon="facebook" />
               </Link>
             </li>
-          </SocialMediaList>
+           <li>
+              <Link href="https://www.instagram.com/bartlett_collection/">
+                <AwesomeIcon icon="instagram" />
+              </Link>
+            </li>
+             </SocialMediaList>
         </Container>
       </Section>
     )

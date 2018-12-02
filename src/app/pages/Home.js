@@ -2,6 +2,12 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router';
+import Bg1 from './../assets/Wire-man-400x800.png'
+import Bg2 from './../assets/Wire-man-768x1024.png'
+import Bg3 from './../assets/Wire-man-1280x800.png'
+import Bg4 from './../assets/Wire-man-1600x900.png'
+import Bg5 from './../assets/Wire-man-1920x1080.png'
+
 
 // Import Button component
 import Button from './../components/Button'
@@ -16,25 +22,25 @@ import Section from './../components/Section'
 import { Heading, Subheading } from './../components/Typography'
 
 const HomeWrapper = styled(Section)`
-  background-image: url(https://source.unsplash.com/t3zrEm88ehc/480x800);
+  background-image: url(${Bg1});
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 
   @media (min-width: 480px) {
-    background-image: url(https://source.unsplash.com/t3zrEm88ehc/768x1024);
+    background-image: url(${Bg2});
   }
 
   @media (min-width: 768px) {
-    background-image: url(https://source.unsplash.com/t3zrEm88ehc/1280x800);
+    background-image: url(${Bg3});
   }
 
   @media (min-width: 1280px) {
-    background-image: url(https://source.unsplash.com/t3zrEm88ehc/1600x900);
+    background-image: url(${Bg4});
   }
 
   @media (min-width: 1600px) {
-    background-image: url(https://source.unsplash.com/t3zrEm88ehc/1920x1080);
+    background-image: url(${Bg5});
   }
 
   &::before {
@@ -45,11 +51,11 @@ const HomeWrapper = styled(Section)`
     content: '';
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, .4);
+    background-color: rgba(0, 0, 0, ..1);
   }
 
   ${Container} {
-    color: #fff;
+    color: #444;
   }
 
   ${Subheading} {
@@ -67,7 +73,7 @@ export default class Home extends React.Component {
         <Container>
           <Heading>Jared Bartlett</Heading>
 
-          <Subheading>Designer & developer</Subheading>
+          <Subheading>Designer / Developer</Subheading>
 
           <HomeButton href="/portfolio">My work</HomeButton>
         </Container>

@@ -16,7 +16,7 @@
   "main": "./src/index.js",
   "scripts": {
     "build": "parcel build ./src/index.html",
-    "start": "parcel ./src/index.html -p 8080"
+    "start": "parcel ./src/index.html -p 80"
   },
   "author": "Your name",
   "license": "MIT",
@@ -24,7 +24,9 @@
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-router-dom": "^4.2.2",
-    "styled-components": "^2.4.1"
+    "string": "^3.3.3",
+    "styled-components": "^2.4.1",
+    "test": "^0.6.0"
   },
   "devDependencies": {
     "babel-core": "6.26.0",

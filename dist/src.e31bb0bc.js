@@ -32148,7 +32148,17 @@ var _matchPath2 = _interopRequireDefault(require("./matchPath"));
 var _withRouter2 = _interopRequireDefault(require("./withRouter"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./MemoryRouter":"../node_modules/react-router/es/MemoryRouter.js","./Prompt":"../node_modules/react-router/es/Prompt.js","./Redirect":"../node_modules/react-router/es/Redirect.js","./Route":"../node_modules/react-router/es/Route.js","./Router":"../node_modules/react-router/es/Router.js","./StaticRouter":"../node_modules/react-router/es/StaticRouter.js","./Switch":"../node_modules/react-router/es/Switch.js","./generatePath":"../node_modules/react-router/es/generatePath.js","./matchPath":"../node_modules/react-router/es/matchPath.js","./withRouter":"../node_modules/react-router/es/withRouter.js"}],"App/components/Button.js":[function(require,module,exports) {
+},{"./MemoryRouter":"../node_modules/react-router/es/MemoryRouter.js","./Prompt":"../node_modules/react-router/es/Prompt.js","./Redirect":"../node_modules/react-router/es/Redirect.js","./Route":"../node_modules/react-router/es/Route.js","./Router":"../node_modules/react-router/es/Router.js","./StaticRouter":"../node_modules/react-router/es/StaticRouter.js","./Switch":"../node_modules/react-router/es/Switch.js","./generatePath":"../node_modules/react-router/es/generatePath.js","./matchPath":"../node_modules/react-router/es/matchPath.js","./withRouter":"../node_modules/react-router/es/withRouter.js"}],"App/assets/Wire-man-400x800.png":[function(require,module,exports) {
+module.exports = "/Wire-man-400x800.dfa393a2.png";
+},{}],"App/assets/Wire-man-768x1024.png":[function(require,module,exports) {
+module.exports = "/Wire-man-768x1024.c8a92d00.png";
+},{}],"App/assets/Wire-man-1280x800.png":[function(require,module,exports) {
+module.exports = "/Wire-man-1280x800.e6a39e59.png";
+},{}],"App/assets/Wire-man-1600x900.png":[function(require,module,exports) {
+module.exports = "/Wire-man-1600x900.6d333db2.png";
+},{}],"App/assets/Wire-man-1920x1080.png":[function(require,module,exports) {
+module.exports = "/Wire-man-1920x1080.51bd144a.png";
+},{}],"App/components/Button.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -32161,7 +32171,7 @@ var _styledComponents = _interopRequireDefault(require("styled-components"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  padding: 8px 12px;\n  font-size: 16px;\n  font-weight: 700;\n  text-decoration: none;\n  text-transform: uppercase;\n  color: #666;\n  background: transparent;\n  border: 2px solid;\n  cursor: pointer;\n  transition: color .25s ease-in-out;\n\n  &:hover {\n    color: #888;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  padding: 8px 12px;\n  font-size: 16px;\n  font-weight: 700;\n  text-decoration: none;\n  text-transform: uppercase;\n  color: #ec2027;\n  background: transparent;\n  border: 2px solid;\n  cursor: pointer;\n  transition: color .25s ease-in-out;\n\n  &:hover {\n    color: #888;\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -32271,7 +32281,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n  margin-top: 0;\n  margin-bottom: 0;\n  font-size: 24px;\n  font-weight: bold;\n\n  @media (min-width: 480px) {\n    font-size: 36px;\n  }\n\n  @media (min-width: 768px) {\n    font-size: 48px;\n  }\n\n  // Styles for handling spacing between typography elements\n  & + h1,\n  & + h2,\n  & + p {\n    margin-top: 21px;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  margin-top: 0;\n  margin-bottom: 0;\n  font-size: 24px;\n  font-weight: bold;\n\n\n\n  @media (min-width: 480px) {\n    font-size: 36px;\n  }\n\n  @media (min-width: 768px) {\n    font-size: 48px;\n  }\n\n  // Styles for handling spacing between typography elements\n  & + h1,\n  & + h2,\n  & + p {\n    margin-top: 21px;\n  }\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -32281,7 +32291,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  margin-top: 0;\n  margin-bottom: 0;\n  font-size: 36px;\n  font-weight: bold;\n\n  @media (min-width: 480px) {\n    font-size: 48px;\n  }\n\n  @media (min-width: 768px) {\n    font-size: 72px;\n  }\n\n  // Styles for handling spacing between typography elements\n  & + h1,\n  & + h2,\n  & + p {\n    margin-top: 21px;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  margin-top: 0;\n  margin-bottom: 0;\n  font-size: 36px;\n  font-weight: bold;\n\n  @media (min-width: 480px) {\n    font-size: 48px;\n    text-shadow: none;\n  }\n\n  @media (min-width: 768px) {\n    font-size: 72px;\n    text-shadow: none;\n  }\n\n  // Styles for handling spacing between typography elements\n  & + h1,\n  & + h2,\n  & + p {\n    margin-top: 21px;\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -32317,6 +32327,16 @@ var _styledComponents = _interopRequireDefault(require("styled-components"));
 
 var _reactRouter = require("react-router");
 
+var _WireMan400x = _interopRequireDefault(require("./../assets/Wire-man-400x800.png"));
+
+var _WireMan768x = _interopRequireDefault(require("./../assets/Wire-man-768x1024.png"));
+
+var _WireMan1280x = _interopRequireDefault(require("./../assets/Wire-man-1280x800.png"));
+
+var _WireMan1600x = _interopRequireDefault(require("./../assets/Wire-man-1600x900.png"));
+
+var _WireMan1920x = _interopRequireDefault(require("./../assets/Wire-man-1920x1080.png"));
+
 var _Button = _interopRequireDefault(require("./../components/Button"));
 
 var _Container = _interopRequireDefault(require("./../components/Container"));
@@ -32346,7 +32366,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  background-image: url(https://source.unsplash.com/t3zrEm88ehc/480x800);\n  background-size: cover;\n  background-repeat: no-repeat;\n  background-position: center;\n\n  @media (min-width: 480px) {\n    background-image: url(https://source.unsplash.com/t3zrEm88ehc/768x1024);\n  }\n\n  @media (min-width: 768px) {\n    background-image: url(https://source.unsplash.com/t3zrEm88ehc/1280x800);\n  }\n\n  @media (min-width: 1280px) {\n    background-image: url(https://source.unsplash.com/t3zrEm88ehc/1600x900);\n  }\n\n  @media (min-width: 1600px) {\n    background-image: url(https://source.unsplash.com/t3zrEm88ehc/1920x1080);\n  }\n\n  &::before {\n    position: absolute;\n    top: 0;\n    left: 0;\n    z-index: 1;\n    content: '';\n    width: 100%;\n    height: 100%;\n    background-color: rgba(0, 0, 0, .4);\n  }\n\n  ", " {\n    color: #fff;\n  }\n\n  ", " {\n    margin-bottom: 32px;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  background-image: url(", ");\n  background-size: cover;\n  background-repeat: no-repeat;\n  background-position: center;\n\n  @media (min-width: 480px) {\n    background-image: url(", ");\n  }\n\n  @media (min-width: 768px) {\n    background-image: url(", ");\n  }\n\n  @media (min-width: 1280px) {\n    background-image: url(", ");\n  }\n\n  @media (min-width: 1600px) {\n    background-image: url(", ");\n  }\n\n  &::before {\n    position: absolute;\n    top: 0;\n    left: 0;\n    z-index: 1;\n    content: '';\n    width: 100%;\n    height: 100%;\n    background-color: rgba(0, 0, 0, ..1);\n  }\n\n  ", " {\n    color: #444;\n  }\n\n  ", " {\n    margin-bottom: 32px;\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -32357,7 +32377,7 @@ function _templateObject() {
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-var HomeWrapper = (0, _styledComponents.default)(_Section.default)(_templateObject(), _Container.default, _Typography.Subheading); // Using Button component but changing the element to 'a'
+var HomeWrapper = (0, _styledComponents.default)(_Section.default)(_templateObject(), _WireMan400x.default, _WireMan768x.default, _WireMan1280x.default, _WireMan1600x.default, _WireMan1920x.default, _Container.default, _Typography.Subheading); // Using Button component but changing the element to 'a'
 
 var HomeButton = _Button.default.withComponent('a');
 
@@ -32377,7 +32397,7 @@ function (_React$Component) {
     value: function render() {
       return _react.default.createElement(HomeWrapper, {
         centered: true
-      }, _react.default.createElement(_Container.default, null, _react.default.createElement(_Typography.Heading, null, "Jared Bartlett"), _react.default.createElement(_Typography.Subheading, null, "Designer & developer"), _react.default.createElement(HomeButton, {
+      }, _react.default.createElement(_Container.default, null, _react.default.createElement(_Typography.Heading, null, "Jared Bartlett"), _react.default.createElement(_Typography.Subheading, null, "Designer / Developer"), _react.default.createElement(HomeButton, {
         href: "/portfolio"
       }, "My work")));
     }
@@ -32387,7 +32407,7 @@ function (_React$Component) {
 }(_react.default.Component);
 
 exports.default = Home;
-},{"react":"../node_modules/react/index.js","styled-components":"../node_modules/styled-components/dist/styled-components.es.js","react-router":"../node_modules/react-router/es/index.js","./../components/Button":"App/components/Button.js","./../components/Container":"App/components/Container.js","./../components/Section":"App/components/Section.js","./../components/Typography":"App/components/Typography.js"}],"App/components/Link.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","styled-components":"../node_modules/styled-components/dist/styled-components.es.js","react-router":"../node_modules/react-router/es/index.js","./../assets/Wire-man-400x800.png":"App/assets/Wire-man-400x800.png","./../assets/Wire-man-768x1024.png":"App/assets/Wire-man-768x1024.png","./../assets/Wire-man-1280x800.png":"App/assets/Wire-man-1280x800.png","./../assets/Wire-man-1600x900.png":"App/assets/Wire-man-1600x900.png","./../assets/Wire-man-1920x1080.png":"App/assets/Wire-man-1920x1080.png","./../components/Button":"App/components/Button.js","./../components/Container":"App/components/Container.js","./../components/Section":"App/components/Section.js","./../components/Typography":"App/components/Typography.js"}],"App/components/Link.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -32471,9 +32491,9 @@ function (_React$Component) {
     value: function render() {
       return _react.default.createElement(_Section.default, {
         centered: true
-      }, _react.default.createElement(_Container.default, null, _react.default.createElement(_Typography.Subheading, null, "Thomas Paine"), _react.default.createElement(_Typography.Heading, null, "About Me"), _react.default.createElement(_Typography.Text, null, "I am a digital designer and developer originally from London and based in New York with over 10 years of experience in the industry. I am a passionate creative that always leads by example and likes to get his hands dirty. I believe that design is only as powerful as the message it is able to carry. I constantly seek to inspire, and build the best work possible. I am a critical thinker and problem solver that pursues a holistic approach. I always make sure every aspect gets produced at the highest quality."), _react.default.createElement(_Typography.Text, null, "Now I am working full time freelance as a designer and developer, building interactive digital products for clients from around the World. If you are interested in a new project, collaboration, or just to chat, feel free to contact me:"), _react.default.createElement("a", {
-        href: "mailto:email@example.com"
-      }, "email@example.com")));
+      }, _react.default.createElement(_Container.default, null, _react.default.createElement(_Typography.Subheading, null, "Jared Bartlett"), _react.default.createElement(_Typography.Heading, null, "About Me"), _react.default.createElement(_Typography.Text, null, "I am a digital designer and developer with 20 years of experience developing websites, brands, print, and advertising. I studied Industrial & Transportation Design at Center For Creative Studies (CCS) in Detroit, MI."), _react.default.createElement(_Typography.Text, null, "I operated a successful digital creative agency for 16 years in Arizona before re-joining the automotive world to design marketing materials and software for industry-leading automotive CRM software company, Elead1One."), _react.default.createElement(_Typography.Text, null, "I am now developing a nodejs-based email marketing templating automation tool call Automail that compiles Automotive Sales and Fixed-Ops offers into modular template components. Automail has drastically increased productivity and virtually eliminated costly mistakes commonly made while hand-building email marketing materials."), _react.default.createElement("a", {
+        href: "mailto:jared@rzn8.com"
+      }, "jared@rzn8.com")));
     }
   }]);
 
@@ -32532,7 +32552,7 @@ function _templateObject4() {
 }
 
 function _templateObject3() {
-  var data = _taggedTemplateLiteral(["\n  display: block;\n  cursor: pointer;\n  width: 100%;\n  transition: opacity .25s ease-in-out;\n\n  &:focus,\n  &:hover {\n    opacity: .5;\n  }\n\n  @media (max-width: 767px) {\n    &:nth-child(n+2) {\n      margin-top: 16px;\n    }\n  }\n\n  @media (min-width: 768px) and (max-width: 991px) {\n    width: calc(50% - 32px);\n\n    &:nth-child(odd) {\n      margin-right: 32px;\n    }\n\n    &:nth-child(even) {\n      margin-left: 32px;\n    }\n\n    &:nth-child(n+3) {\n      margin-top: 48px;\n    }\n  }\n\n  @media (min-width: 992px) {\n    width: calc(33.33333% - 32px);\n\n    &:first-child,\n    &:nth-child(4),\n    &:nth-child(7) {\n      margin-right: 32px;\n    }\n\n    &:nth-child(2),\n    &:nth-child(4),\n    &:nth-child(8), {\n      margin-left: 16px;\n      margin-right: 16px;\n    }\n\n    &:nth-child(3),\n    &:nth-child(6),\n    &:last-child {\n      margin-left: 32px;\n    }\n\n    &:nth-child(n+4) {\n      margin-top: 24px;\n    }\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  display: block;\n  cursor: pointer;\n  width: 100%;\n  transition: opacity .25s ease-in-out;\n  border:20px solid #ccc;\n  &:focus,\n  &:hover {\n    opacity: .5;\n  }\n\n  @media (max-width: 767px) {\n    &:nth-child(n+2) {\n      margin-top: 16px;\n    }\n  }\n\n  @media (min-width: 768px) and (max-width: 991px) {\n    width: calc(50% - 32px);\n\n    &:nth-child(odd) {\n      margin-right: 32px;\n    }\n\n    &:nth-child(even) {\n      margin-left: 32px;\n    }\n\n    &:nth-child(n+3) {\n      margin-top: 48px;\n    }\n  }\n\n  @media (min-width: 992px) {\n    width: calc(33.33333% - 32px);\n\n   \n    &:nth-child(3n+1)\n      {\n      margin-right: 32px;\n    }\n\n\n    &:nth-child(3n) {\n      \n      margin-left: 32px;\n    }\n\n\n    &:nth-child(n+4) {\n      margin-top: 24px;\n    }\n  }\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -32542,7 +32562,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n  padding-bottom: 32px;\n  display: flex;\n  flex-wrap: wrap;\n"]);
+  var data = _taggedTemplateLiteral(["\n  padding-bottom: 32px;\n  display: flex;\n  flex-wrap: wrap;\n\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -32571,6 +32591,8 @@ var PortfolioItem = _styledComponents.default.a(_templateObject3());
 
 var PortfolioItemThumbnail = _styledComponents.default.img(_templateObject4());
 
+var a = ["American-Racing-Packaging.jpg", "American-Racing.jpg", "Arnett_web.jpg", "AZScooter_Web.png", "AzScooter-Logo.png", "AZTECH_Advert.png", "BinaryOffice.png", "BurningScorpion.png", "CHW_Posters.jpg", "Cinnamon-Roasted.png", "DefensePest.png", "Designr1_Web.png", "EZPHX_logo.png", "FED-Logo.png", "Finlinson.png", "Finlinsonproperties_web.png", "Florence-Econimic-Development-Website.jpg", "Florence-Economic-Development.jpg", "FlorenceChamber.png", "GlobeCorproation_Web.png", "Healthfoodie.png", "Heritage.jpg", "improveCME_logo.png", "ImproveCME.png", "Longden_web.png", "MealFactory.png", "MontiRugs.jpg", "NHFF_Web.jpg", "NutritionGiants.jpg", "PalmWestLeather.jpg", "Perfect-Skin-Laser-Center.jpg", "photomatronic.png", "Pierpont.png", "PolkadotPosh.png", "PremierKitchen.jpg", "QueenCreekAccounting.png", "QueenCreekDental.png", "ReedFamilyVision.png", "Reyes-Logo.png", "Rinaldi_adv.jpg", "Rinaldi-Smile.jpg", "RunFatBoy.png", "Scottsdale.jpg", "SealOutScorpions.png", "Shelby.jpg", "SteelInnovations_Web.jpg", "Stoopid_tree.png", "Summit-Asset.png", "SWF_Brochure.png", "SWF-Logo.png", "SYAP.png", "Syrus-Logo.jpg", "Tassi_web.jpg", "Tourism-Brochure.jpg", "Vaquero-Estates.png", "vGas_Packaging.png", "VictoryAngelFilms-300x300.png", "WhiteFox.png", "Wonbid.jpg", "ZipsEnergy-Poster.png"];
+
 var Portfolio =
 /*#__PURE__*/
 function (_React$Component) {
@@ -32585,63 +32607,19 @@ function (_React$Component) {
   _createClass(Portfolio, [{
     key: "render",
     value: function render() {
-      return _react.default.createElement(PortfolioWrapper, null, _react.default.createElement(_Container.default, null, _react.default.createElement(_Typography.Subheading, null, "Thomas Paine"), _react.default.createElement(_Typography.Heading, null, "My work"), _react.default.createElement(_Typography.Text, null, "Selected examples of my work. If you want to see more, drop me an email."), _react.default.createElement(PortfolioGrid, null, _react.default.createElement(PortfolioItem, {
-        href: ""
-      }, _react.default.createElement(PortfolioItemThumbnail, {
-        src: "https://source.unsplash.com/z4CAuzwaXrM/600x600",
-        srcSet: "https://source.unsplash.com/z4CAuzwaXrM/600x600 1x, https://source.unsplash.com/z4CAuzwaXrM/1200x1200 2x",
-        alt: "Example of work"
-      })), _react.default.createElement(PortfolioItem, {
-        href: ""
-      }, _react.default.createElement(PortfolioItemThumbnail, {
-        src: "https://source.unsplash.com/-aDl1z8_nGY/600x600",
-        srcSet: "https://source.unsplash.com/-aDl1z8_nGY/600x600 1x, https://source.unsplash.com/-aDl1z8_nGY/1200x1200 2x",
-        alt: "Example of work"
-      })), _react.default.createElement(PortfolioItem, {
-        href: ""
-      }, _react.default.createElement(PortfolioItemThumbnail, {
-        src: "https://source.unsplash.com/qvEwMfUX_DM/600x600",
-        srcSet: "https://source.unsplash.com/qvEwMfUX_DM/600x600 1x, https://source.unsplash.com/qvEwMfUX_DM/1200x1200 2x",
-        alt: "Example of work"
-      })), _react.default.createElement(PortfolioItem, {
-        href: ""
-      }, _react.default.createElement(PortfolioItemThumbnail, {
-        src: "https://source.unsplash.com/9QjbejABFn8/600x600",
-        srcSet: "https://source.unsplash.com/9QjbejABFn8/600x600 1x, https://source.unsplash.com/9QjbejABFn8/1200x1200 2x",
-        alt: "Example of work"
-      })), _react.default.createElement(PortfolioItem, {
-        href: ""
-      }, _react.default.createElement(PortfolioItemThumbnail, {
-        src: "https://source.unsplash.com/cDD83wV627U/600x600",
-        srcSet: "https://source.unsplash.com/cDD83wV627U/600x600 1x, https://source.unsplash.com/cDD83wV627U/1200x1200 2x",
-        alt: "Example of work"
-      })), _react.default.createElement(PortfolioItem, {
-        href: ""
-      }, _react.default.createElement(PortfolioItemThumbnail, {
-        src: "https://source.unsplash.com/KDYcgCEoFcY/600x600",
-        srcSet: "https://source.unsplash.com/KDYcgCEoFcY/600x600 1x, https://source.unsplash.com/KDYcgCEoFcY/1200x1200 2x",
-        alt: "Example of work"
-      })), _react.default.createElement(PortfolioItem, {
-        href: ""
-      }, _react.default.createElement(PortfolioItemThumbnail, {
-        src: "https://source.unsplash.com/oKfCxcKnCo8/600x600",
-        srcSet: "https://source.unsplash.com/oKfCxcKnCo8/600x600 1x, https://source.unsplash.com/oKfCxcKnCo8/1200x1200 2x",
-        alt: "Example of work"
-      })), _react.default.createElement(PortfolioItem, {
-        href: ""
-      }, _react.default.createElement(PortfolioItemThumbnail, {
-        src: "https://source.unsplash.com/dClHqW-EfS8/600x600",
-        srcSet: "https://source.unsplash.com/dClHqW-EfS8/600x600 1x, https://source.unsplash.com/dClHqW-EfS8/1200x1200 2x",
-        alt: "Example of work"
-      })), _react.default.createElement(PortfolioItem, {
-        href: ""
-      }, _react.default.createElement(PortfolioItemThumbnail, {
-        src: "https://source.unsplash.com/74elF-XSsPg/600x600",
-        srcSet: "https://source.unsplash.com/74elF-XSsPg/600x600 1x, https://source.unsplash.com/74elF-XSsPg/1200x1200 2x",
-        alt: "Example of work"
-      }))), _react.default.createElement(_Typography.Text, null, "Let's get in touch:"), _react.default.createElement(_Link.default, {
-        href: "mailto:email@example.com"
-      }, "email@example.com")));
+      return _react.default.createElement(PortfolioWrapper, null, _react.default.createElement(_Container.default, null, _react.default.createElement(_Typography.Subheading, null, "Jared Bartlett"), _react.default.createElement(_Typography.Heading, null, "My work"), _react.default.createElement(_Typography.Text, null, "Selected examples of my work. If you want to see more, drop me an email."), _react.default.createElement(PortfolioGrid, null, a.map(function (i) {
+        //const string = "./../assets/portfolio/AZScooter_Web.png";
+        var path = "http://www.rzn8.com/portfolio/" + i;
+        return _react.default.createElement(PortfolioItem, {
+          href: ""
+        }, _react.default.createElement(PortfolioItemThumbnail, {
+          src: path,
+          srcSet: path + " 1x",
+          alt: "Example of work"
+        }));
+      })), _react.default.createElement(_Typography.Text, null, "Let's get in touch:"), _react.default.createElement(_Link.default, {
+        href: "mailto:jared@rzn8.com"
+      }, "jared@rzn8.com")));
     }
   }]);
 
@@ -32755,32 +32733,24 @@ function (_React$Component) {
     value: function render() {
       return _react.default.createElement(_Section.default, {
         centered: true
-      }, _react.default.createElement(_Container.default, null, _react.default.createElement(_Typography.Heading, null, "Say hello"), _react.default.createElement(_Typography.Text, null, "I'm available for freelance work. If you are interested in a new project, collaboration, or just to chat, feel free to contact me."), _react.default.createElement(ContactLink, {
-        href: "mailto:email@example.com"
-      }, "email@example.com"), _react.default.createElement(_Typography.Text, null, "Follow me on the web:"), _react.default.createElement(SocialMediaList, null, _react.default.createElement("li", null, _react.default.createElement(_Link.default, {
-        href: ""
-      }, _react.default.createElement(_AwesomeIcon.default, {
-        icon: "twitter"
-      }))), _react.default.createElement("li", null, _react.default.createElement(_Link.default, {
-        href: ""
+      }, _react.default.createElement(_Container.default, null, _react.default.createElement(_Typography.Heading, null, "Say Hello"), _react.default.createElement(_Typography.Text, null, "I'd love to discuss new opportunities. If you are interested in a new project, collaboration, or just to chat, feel free to contact me."), _react.default.createElement(ContactLink, {
+        href: "mailto:jared@rzn8.com"
+      }, "jared@jared.com"), _react.default.createElement(_Typography.Text, null, "Follow me on the web:"), _react.default.createElement(SocialMediaList, null, _react.default.createElement("li", null, _react.default.createElement(_Link.default, {
+        href: "https://www.linkedin.com/in/jaredbartlett/"
       }, _react.default.createElement(_AwesomeIcon.default, {
         icon: "linkedin"
       }))), _react.default.createElement("li", null, _react.default.createElement(_Link.default, {
-        href: ""
-      }, _react.default.createElement(_AwesomeIcon.default, {
-        icon: "behance"
-      }))), _react.default.createElement("li", null, _react.default.createElement(_Link.default, {
-        href: ""
-      }, _react.default.createElement(_AwesomeIcon.default, {
-        icon: "dribbble"
-      }))), _react.default.createElement("li", null, _react.default.createElement(_Link.default, {
-        href: ""
+        href: "https://github.com/j1bartlett"
       }, _react.default.createElement(_AwesomeIcon.default, {
         icon: "github"
       }))), _react.default.createElement("li", null, _react.default.createElement(_Link.default, {
-        href: ""
+        href: "https://www.facebook.com/jared.bartlett2"
       }, _react.default.createElement(_AwesomeIcon.default, {
-        icon: "codepen"
+        icon: "facebook"
+      }))), _react.default.createElement("li", null, _react.default.createElement(_Link.default, {
+        href: "https://www.instagram.com/bartlett_collection/"
+      }, _react.default.createElement(_AwesomeIcon.default, {
+        icon: "instagram"
       }))))));
     }
   }]);
@@ -32866,7 +32836,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n  position: fixed;\n  top: 0;\n  left: 0;\n  z-index: 999;\n  width: 100%;\n"]);
+  var data = _taggedTemplateLiteral(["\n  position: fixed;\n  top: 0;\n  left: 0;\n  z-index: 999;\n  width: 100%;\n  background-color:rgba(255,255,255,0.85);\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -33089,7 +33059,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59032" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53161" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

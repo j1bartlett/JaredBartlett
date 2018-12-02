@@ -9,10 +9,12 @@ export const Heading = styled.h1`
 
   @media (min-width: 480px) {
     font-size: 48px;
+    text-shadow: none;
   }
 
   @media (min-width: 768px) {
     font-size: 72px;
+    text-shadow: none;
   }
 
   // Styles for handling spacing between typography elements
@@ -28,6 +30,8 @@ export const Subheading = styled.h2`
   margin-bottom: 0;
   font-size: 24px;
   font-weight: bold;
+
+
 
   @media (min-width: 480px) {
     font-size: 36px;

@@ -22,14 +22,14 @@ const PortfolioGrid = styled.div`
   padding-bottom: 32px;
   display: flex;
   flex-wrap: wrap;
-`
 
+`
 const PortfolioItem = styled.a`
   display: block;
   cursor: pointer;
   width: 100%;
   transition: opacity .25s ease-in-out;
-
+  border:20px solid #ccc;
   &:focus,
   &:hover {
     opacity: .5;
@@ -60,24 +60,18 @@ const PortfolioItem = styled.a`
   @media (min-width: 992px) {
     width: calc(33.33333% - 32px);
 
-    &:first-child,
-    &:nth-child(4),
-    &:nth-child(7) {
+   
+    &:nth-child(3n+1)
+      {
       margin-right: 32px;
     }
 
-    &:nth-child(2),
-    &:nth-child(4),
-    &:nth-child(8), {
-      margin-left: 16px;
-      margin-right: 16px;
-    }
 
-    &:nth-child(3),
-    &:nth-child(6),
-    &:last-child {
+    &:nth-child(3n) {
+      
       margin-left: 32px;
     }
+
 
     &:nth-child(n+4) {
       margin-top: 24px;
@@ -89,59 +83,92 @@ const PortfolioItemThumbnail = styled.img`
   max-width: 100%;
   object-fit: contain;
 `
+let a = ["American-Racing-Packaging.jpg",
+"American-Racing.jpg",
+"Arnett_web.jpg",
+"AZScooter_Web.png",
+"AzScooter-Logo.png",
+"AZTECH_Advert.png",
+"BinaryOffice.png",
+"BurningScorpion.png",
+"CHW_Posters.jpg",
+"Cinnamon-Roasted.png",
+"DefensePest.png",
+"Designr1_Web.png",
+"EZPHX_logo.png",
+"FED-Logo.png",
+"Finlinson.png",
+"Finlinsonproperties_web.png",
+"Florence-Econimic-Development-Website.jpg",
+"Florence-Economic-Development.jpg",
+"FlorenceChamber.png",
+"GlobeCorproation_Web.png",
+"Healthfoodie.png",
+"Heritage.jpg",
+"improveCME_logo.png",
+"ImproveCME.png",
+"Longden_web.png",
+"MealFactory.png",
+"MontiRugs.jpg",
+"NHFF_Web.jpg",
+"NutritionGiants.jpg",
+"PalmWestLeather.jpg",
+"Perfect-Skin-Laser-Center.jpg",
+"photomatronic.png",
+"Pierpont.png",
+"PolkadotPosh.png",
+"PremierKitchen.jpg",
+"QueenCreekAccounting.png",
+"QueenCreekDental.png",
+"ReedFamilyVision.png",
+"Reyes-Logo.png",
+"Rinaldi_adv.jpg",
+"Rinaldi-Smile.jpg",
+"RunFatBoy.png",
+"Scottsdale.jpg",
+"SealOutScorpions.png",
+"Shelby.jpg",
+"SteelInnovations_Web.jpg",
+"Stoopid_tree.png",
+"Summit-Asset.png",
+"SWF_Brochure.png",
+"SWF-Logo.png",
+"SYAP.png",
+"Syrus-Logo.jpg",
+"Tassi_web.jpg",
+"Tourism-Brochure.jpg",
+"Vaquero-Estates.png",
+"vGas_Packaging.png",
+"VictoryAngelFilms-300x300.png",
+"WhiteFox.png",
+"Wonbid.jpg",
+"ZipsEnergy-Poster.png"];
 
 export default class Portfolio extends React.Component {
   render () {
     return (
       <PortfolioWrapper>
         <Container>
-          <Subheading>Thomas Paine</Subheading>
+          <Subheading>Jared Bartlett</Subheading>
 
           <Heading>My work</Heading>
 
           <Text>Selected examples of my work. If you want to see more, drop me an email.</Text>
-
           <PortfolioGrid>
-            <PortfolioItem href="">
-              <PortfolioItemThumbnail src="https://source.unsplash.com/z4CAuzwaXrM/600x600" srcSet="https://source.unsplash.com/z4CAuzwaXrM/600x600 1x, https://source.unsplash.com/z4CAuzwaXrM/1200x1200 2x" alt="Example of work" />
+{a.map(i => {
+  //const string = "./../assets/portfolio/AZScooter_Web.png";
+  let path = "http://www.rzn8.com/portfolio/"+i;
+  
+        return <PortfolioItem href="">
+              <PortfolioItemThumbnail src={path} srcSet={(path+" 1x")} alt="Example of work" />
             </PortfolioItem>
-
-            <PortfolioItem href="">
-              <PortfolioItemThumbnail src="https://source.unsplash.com/-aDl1z8_nGY/600x600" srcSet="https://source.unsplash.com/-aDl1z8_nGY/600x600 1x, https://source.unsplash.com/-aDl1z8_nGY/1200x1200 2x" alt="Example of work" />
-            </PortfolioItem>
-
-            <PortfolioItem href="">
-              <PortfolioItemThumbnail src="https://source.unsplash.com/qvEwMfUX_DM/600x600" srcSet="https://source.unsplash.com/qvEwMfUX_DM/600x600 1x, https://source.unsplash.com/qvEwMfUX_DM/1200x1200 2x" alt="Example of work" />
-            </PortfolioItem>
-
-            <PortfolioItem href="">
-              <PortfolioItemThumbnail src="https://source.unsplash.com/9QjbejABFn8/600x600" srcSet="https://source.unsplash.com/9QjbejABFn8/600x600 1x, https://source.unsplash.com/9QjbejABFn8/1200x1200 2x" alt="Example of work" />
-            </PortfolioItem>
-
-            <PortfolioItem href="">
-              <PortfolioItemThumbnail src="https://source.unsplash.com/cDD83wV627U/600x600" srcSet="https://source.unsplash.com/cDD83wV627U/600x600 1x, https://source.unsplash.com/cDD83wV627U/1200x1200 2x" alt="Example of work" />
-            </PortfolioItem>
-
-            <PortfolioItem href="">
-              <PortfolioItemThumbnail src="https://source.unsplash.com/KDYcgCEoFcY/600x600" srcSet="https://source.unsplash.com/KDYcgCEoFcY/600x600 1x, https://source.unsplash.com/KDYcgCEoFcY/1200x1200 2x" alt="Example of work" />
-            </PortfolioItem>
-
-            <PortfolioItem href="">
-              <PortfolioItemThumbnail src="https://source.unsplash.com/oKfCxcKnCo8/600x600" srcSet="https://source.unsplash.com/oKfCxcKnCo8/600x600 1x, https://source.unsplash.com/oKfCxcKnCo8/1200x1200 2x" alt="Example of work" />
-            </PortfolioItem>
-
-            <PortfolioItem href="">
-              <PortfolioItemThumbnail src="https://source.unsplash.com/dClHqW-EfS8/600x600" srcSet="https://source.unsplash.com/dClHqW-EfS8/600x600 1x, https://source.unsplash.com/dClHqW-EfS8/1200x1200 2x" alt="Example of work" />
-            </PortfolioItem>
-
-            <PortfolioItem href="">
-              <PortfolioItemThumbnail src="https://source.unsplash.com/74elF-XSsPg/600x600" srcSet="https://source.unsplash.com/74elF-XSsPg/600x600 1x, https://source.unsplash.com/74elF-XSsPg/1200x1200 2x" alt="Example of work" />
-            </PortfolioItem>
+      })}
+          
           </PortfolioGrid>
 
           <Text>Let's get in touch:</Text>
 
-          <Link href="mailto:email@example.com">email@example.com</Link>
+          <Link href="mailto:jared@rzn8.com">jared@rzn8.com</Link>
         </Container>
       </PortfolioWrapper>
     )

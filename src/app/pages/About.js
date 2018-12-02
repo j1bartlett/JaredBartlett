@@ -19,15 +19,16 @@ export default class About extends React.Component {
     return (
       <Section centered>
         <Container>
-          <Subheading>Thomas Paine</Subheading>
+          <Subheading>Jared Bartlett</Subheading>
 
           <Heading>About Me</Heading>
 
-          <Text>I am a digital designer and developer originally from London and based in New York with over 10 years of experience in the industry. I am a passionate creative that always leads by example and likes to get his hands dirty. I believe that design is only as powerful as the message it is able to carry. I constantly seek to inspire, and build the best work possible. I am a critical thinker and problem solver that pursues a holistic approach. I always make sure every aspect gets produced at the highest quality.</Text>
+          <Text>I am a digital designer and developer with 20 years of experience developing websites, brands, print, and advertising. I studied Industrial & Transportation Design at Center For Creative Studies (CCS) in Detroit, MI.</Text>
+          <Text>I operated a successful digital creative agency for 16 years in Arizona before re-joining the automotive world to design marketing materials and software for industry-leading automotive CRM software company, Elead1One.</Text>
 
-          <Text>Now I am working full time freelance as a designer and developer, building interactive digital products for clients from around the World. If you are interested in a new project, collaboration, or just to chat, feel free to contact me:</Text>
+          <Text>I am now developing a nodejs-based email marketing templating automation tool call Automail that compiles Automotive Sales and Fixed-Ops offers into modular template components. Automail has drastically increased productivity and virtually eliminated costly mistakes commonly made while hand-building email marketing materials.</Text>
 
-          <a href="mailto:email@example.com">email@example.com</a>
+          <a href="mailto:jared@rzn8.com">jared@rzn8.com</a>
         </Container>
       </Section>
     )
