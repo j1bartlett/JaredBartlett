@@ -13,7 +13,7 @@ import Section from './../components/Section'
 
 // Import typography components
 import { Heading, Subheading, Text } from './../components/Typography'
-
+import Button from './../components/Button'
 const PortfolioWrapper = styled(Section)`
   padding-top: 120px;
   padding-bottom: 80px;
@@ -78,7 +78,16 @@ const PortfolioItem = styled.a`
     }
   }
 `
-
+const Sub = styled(Subheading)`
+display:inline-block;
+margin-right:20px;
+`
+// Using Button component but changing the element to 'a'
+const Case = Button.withComponent('a')
+const Case1 = styled(Case)`
+margin-bottom:20px;
+vertical-align:middle;
+display: inline-block;`
 const PortfolioItemThumbnail = styled.img`
   max-width: 100%;
   object-fit: contain;
@@ -149,9 +158,10 @@ export default class Portfolio extends React.Component {
     return (
       <PortfolioWrapper>
         <Container>
-          <Subheading>Jared Bartlett</Subheading>
+        
+          <Heading>Jared Bartlett</Heading>
+          <Sub>My Work</Sub><Case1 href="/CaseOne">Case Study</Case1>
 
-          <Heading>My work</Heading>
 
           <Text>Selected examples of my work. If you want to see more, drop me an email.</Text>
           <PortfolioGrid>

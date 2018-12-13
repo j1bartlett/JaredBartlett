@@ -32171,7 +32171,7 @@ var _styledComponents = _interopRequireDefault(require("styled-components"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  padding: 8px 12px;\n  font-size: 16px;\n  font-weight: 700;\n  text-decoration: none;\n  text-transform: uppercase;\n  color: #ec2027;\n  background: transparent;\n  border: 2px solid;\n  cursor: pointer;\n  transition: color .25s ease-in-out;\n\n  &:hover {\n    color: #888;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  padding: 8px 12px;\n  Margin-right:20px;\n  font-size: 16px;\n  font-weight: 700;\n  text-decoration: none;\n  text-transform: uppercase;\n  color: #78BB2C;\n  background: transparent;\n  border: 2px solid;\n  cursor: pointer;\n  transition: color .25s ease-in-out;\n\n  &:hover {\n    color: #888;\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -32194,12 +32194,22 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _styledComponents = _interopRequireDefault(require("styled-components"));
+var _styledComponents = _interopRequireWildcard(require("styled-components"));
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
+
+function _templateObject2() {
+  var data = _taggedTemplateLiteral(["\n    background-color:#efefef;\n    padding:40px;\n    margin-bottom:20px;\n  "]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  padding-right: 15px;\n  padding-left: 15px;\n  margin-right: auto;\n  margin-left: auto;\n  width: 100%;\n\n  /* Breakpoint for tablets */\n  @media (min-width: 576px) {\n    max-width: 540px;\n  }\n\n  /* Breakpoint for small desktops */\n  @media (min-width: 768px) {\n    max-width: 720px;\n  }\n\n  /* Breakpoint for medium desktops */\n  @media (min-width: 992px) {\n    max-width: 960px;\n  }\n\n  /* Breakpoint for large desktops and HD devices */\n  @media (min-width: 1200px) {\n    max-width: 1140px;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  padding-right: 15px;\n  padding-left: 15px;\n  margin-right: auto;\n  margin-left: auto;\n  width: 100%;\n\n  /* Breakpoint for tablets */\n  @media (min-width: 576px) {\n    max-width: 540px;\n  }\n\n  /* Breakpoint for small desktops */\n  @media (min-width: 768px) {\n    max-width: 720px;\n  }\n\n  /* Breakpoint for medium desktops */\n  @media (min-width: 992px) {\n    max-width: 960px;\n  }\n\n  /* Breakpoint for large desktops and HD devices */\n  @media (min-width: 1200px) {\n    max-width: 1140px;\n  }\n  ", "\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -32210,7 +32220,9 @@ function _templateObject() {
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-var Container = _styledComponents.default.div(_templateObject());
+var Container = _styledComponents.default.div(_templateObject(), function (props) {
+  return props.bg && (0, _styledComponents.css)(_templateObject2());
+});
 
 var _default = Container;
 exports.default = _default;
@@ -32264,14 +32276,54 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.Text = exports.Subheading = exports.Heading = void 0;
+exports.Text = exports.Minorheading = exports.Highlight = exports.Subheading = exports.Heading = void 0;
 
-var _styledComponents = _interopRequireDefault(require("styled-components"));
+var _styledComponents = _interopRequireWildcard(require("styled-components"));
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
+
+function _templateObject7() {
+  var data = _taggedTemplateLiteral(["\n   margin-top:-10px;\n   padding:0;\n   margin-left:20px;\n   margin-bottom:40px;\n   background-color:#efefef;\n   padding:1rem;\n   @media (min-width: 768px) {\n    font-size: 1rem;\n  }\n  "]);
+
+  _templateObject7 = function _templateObject7() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject6() {
+  var data = _taggedTemplateLiteral(["\n  margin-top: 0;\n  font-size: 16px;\n\n  @media (min-width: 768px) {\n    font-size: 18px;\n  }\n\n  @media (min-width: 992px) {\n    font-size: 21px;\n  }\n\n  & + & {\n    margin-top: 32px;\n  }\n\n  \n  \n  ", "\n"]);
+
+  _templateObject6 = function _templateObject6() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject5() {
+  var data = _taggedTemplateLiteral(["\n\n  margin-top: 0;\n  margin-bottom: 0;\n  font-size: 18px;\n  font-weight: bold;\n\n  @media (min-width: 480px) {\n    font-size: 20px;\n  }\n\n  @media (min-width: 768px) {\n    font-size: 24px;\n  }\n\n  // Styles for handling spacing between typography elements\n  & + h1,\n  & + h2,\n  & + p {\n    margin-top: 21px;\n  }\n"]);
+
+  _templateObject5 = function _templateObject5() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject4() {
+  var data = _taggedTemplateLiteral(["\n    color:#fff;\n    font-size:60% !important;\n    background-color:#78BB2C;\n    padding:5px 10px;\n    Margin-right:10px;\n    &:after{\n  content:'';\n  padding-right:0;\n\n }\n  "]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
 
 function _templateObject3() {
-  var data = _taggedTemplateLiteral(["\n  margin-top: 0;\n  font-size: 16px;\n\n  @media (min-width: 768px) {\n    font-size: 18px;\n  }\n\n  @media (min-width: 992px) {\n    font-size: 21px;\n  }\n\n  & + & {\n    margin-top: 32px;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  text-transform:uppercase;\n  font-weight:bold;\n  margin-top: 0;\n  margin-bottom: 0;\n  font-size: 16px;\n  display:inline;\n  color:#666;\n &:after{\n  content:':';\n  padding-right:10px;\n }\n\n\n\n  @media (min-width: 480px) {\n    font-size: 16px;\n  }\n\n  @media (min-width: 768px) {\n    font-size: 18px;\n  }\n\n  // Styles for handling spacing between typography elements\n  & + h1,\n  & + h2,\n  & + p {\n    margin-top: 21px;\n  }\n  ", "\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -32310,7 +32362,19 @@ var Subheading = _styledComponents.default.h2(_templateObject2());
 
 exports.Subheading = Subheading;
 
-var Text = _styledComponents.default.p(_templateObject3());
+var Highlight = _styledComponents.default.span(_templateObject3(), function (props) {
+  return props.dark && (0, _styledComponents.css)(_templateObject4());
+});
+
+exports.Highlight = Highlight;
+
+var Minorheading = _styledComponents.default.h4(_templateObject5());
+
+exports.Minorheading = Minorheading;
+
+var Text = _styledComponents.default.p(_templateObject6(), function (props) {
+  return props.nopad && (0, _styledComponents.css)(_templateObject7());
+});
 
 exports.Text = Text;
 },{"styled-components":"../node_modules/styled-components/dist/styled-components.es.js"}],"App/pages/Home.js":[function(require,module,exports) {
@@ -32397,9 +32461,11 @@ function (_React$Component) {
     value: function render() {
       return _react.default.createElement(HomeWrapper, {
         centered: true
-      }, _react.default.createElement(_Container.default, null, _react.default.createElement(_Typography.Heading, null, "Jared Bartlett"), _react.default.createElement(_Typography.Subheading, null, "Designer / Developer"), _react.default.createElement(HomeButton, {
+      }, _react.default.createElement(_Container.default, null, _react.default.createElement(_Typography.Heading, null, "Jared Bartlett"), _react.default.createElement(_Typography.Subheading, null, "UX Designer / Developer"), _react.default.createElement(HomeButton, {
         href: "/portfolio"
-      }, "My work")));
+      }, "My work"), _react.default.createElement(HomeButton, {
+        href: "/resume"
+      }, "Resume")));
     }
   }]);
 
@@ -32435,7 +32501,7 @@ var Link = _styledComponents.default.a(_templateObject());
 
 var _default = Link;
 exports.default = _default;
-},{"styled-components":"../node_modules/styled-components/dist/styled-components.es.js"}],"App/pages/About.js":[function(require,module,exports) {
+},{"styled-components":"../node_modules/styled-components/dist/styled-components.es.js"}],"App/pages/CaseOne.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -32474,6 +32540,131 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n  padding-top: 120px;\n  padding-bottom: 80px;\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+var CaseWrapper = (0, _styledComponents.default)(_Section.default)(_templateObject());
+
+var Case =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(Case, _React$Component);
+
+  function Case() {
+    _classCallCheck(this, Case);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(Case).apply(this, arguments));
+  }
+
+  _createClass(Case, [{
+    key: "render",
+    value: function render() {
+      return _react.default.createElement(CaseWrapper, null, _react.default.createElement(_Container.default, null, _react.default.createElement(_Typography.Subheading, null, "Case"), _react.default.createElement(_Typography.Heading, null, "Cosmetic Product"), _react.default.createElement(_Typography.Text, null, "This case company was a small single-product home business started by a woman with a great product idea to keep her hair out of the way as she cleaned her face and applied makeup. The owner hired a talented graphic designer to develop an attractive brand identity and a website."), _react.default.createElement(_Typography.Minorheading, null, "The problem"), _react.default.createElement(_Typography.Text, null, "The product was also sold via QVC and did extremely well on that network but the website sales were not performing, only yielding approximately $500 a month. I was asked to boost sales with SEO and SEM campaigns.")), _react.default.createElement(_Container.default, null, _react.default.createElement(_Typography.Minorheading, null, "Assessment"), _react.default.createElement(_Typography.Text, null, "I wanted to understand the path the existing traffic was taking before any campaigns were deployed so I installed two different analytic trackers Google Analytics, and Woopra. I suspected there was a problem with the UX first and foremost. Analytics revealed that most existing traffic was coming from established bloggers linking directly to the home page. Unfortunately there was an extremely high bounce rate on the home page in the 70%-80% range.")), _react.default.createElement(_Container.default, null, _react.default.createElement(_Typography.Minorheading, null, "Analysis"), _react.default.createElement(_Typography.Text, null, "There were a few things happening that needed to be addressed in order to improve sales."), _react.default.createElement(_Container.default, {
+        bg: true
+      }, _react.default.createElement("ul", null, _react.default.createElement("li", null, "The homepage consisted of large brand-establishing graphics that occupied most of the valuable real estate. "), _react.default.createElement("li", null, "The home page contained a very small demo video, with rather loud and energetic music set on auto-play."), _react.default.createElement("li", null, "Although there was only a single product it came in a variety of colors. The homepage didn't provide immediate links to view or purchase high-performing product options."), _react.default.createElement("li", null, "With only a single product to sell, special promotions are a vital part of leveraging past customers to come back or empower them to refer friends with incentives."), _react.default.createElement("li", null, "The company also sold wholesale packs to retailers but was taking paper orders by fax for these and had no way of servicing retailers from their website.")))), _react.default.createElement(_Container.default, null, _react.default.createElement(_Typography.Minorheading, null, "UX Recommendations"), _react.default.createElement(_Typography.Text, null, "There were a few things happening that needed to be addressed in order to improve sales."), _react.default.createElement(_Container.default, {
+        bg: true
+      }, _react.default.createElement("ul", null, _react.default.createElement("li", null, "The product is extremely simple there's not much marketing value in a demo video. If a demo video is required then most certainly it would serve the user experience to allow them to decide if they want to watch it or not."), _react.default.createElement("li", null, "Reduce brand-graphics and let the experience establish the brand. Customers come to gather information about a product to decide if the value of that product exceeds the value of their cash. The job of a retail website is to get out of the way and build perceived value in the most direct way possible."), _react.default.createElement("li", null, "Variety is the key to selling a single product multiple times to the same person. Knowing what colors are the most popular boosts confidence and reduces perceptions of risk. I recommended leveraging sales analytics to dynamically display three of most popular color choices."), _react.default.createElement("li", null, "I recommended using a small but prominent section of the homepage to promote current sales events and associated promotional codes."), _react.default.createElement("li", null, "With retailers representing the largest revenue I recommended redeveloping the simple retail ecommerce site to leverage a more robust shopping engine capable of registering wholesale accounts and separate products, categories, promotions, and shipping options just for retailers who are logged in.")))), _react.default.createElement(_Container.default, null, _react.default.createElement(_Typography.Minorheading, null, "Results"), _react.default.createElement(_Typography.Text, null, "After development we released the new website just in time for the upcoming holiday season. Without any additional search marketing the site sold $15M to retail customers the first month. This continued and climbed for years afterwards yielding $1.25MM  and eventually allowing the owners to sell the company for an undisclosed but lucrative sum.")), _react.default.createElement(_Container.default, null, _react.default.createElement(_Typography.Minorheading, null, "Maintenance"), _react.default.createElement(_Typography.Text, null, "Making a few successful changes early did not mean that the job was done. I spent approx 8 years working with this client refining the user experience to improve sales and decrease customer complaints by analyzing traffic patterns and improving the end-to-end experience from first-click to shipping label.")), _react.default.createElement(_Container.default, null, _react.default.createElement("a", {
+        href: "mailto:jared@rzn8.com"
+      }, "jared@rzn8.com")));
+    }
+  }]);
+
+  return Case;
+}(_react.default.Component);
+
+exports.default = Case;
+},{"react":"../node_modules/react/index.js","styled-components":"../node_modules/styled-components/dist/styled-components.es.js","./../components/Container":"App/components/Container.js","./../components/Link":"App/components/Link.js","./../components/Section":"App/components/Section.js","./../components/Typography":"App/components/Typography.js"}],"App/pages/About.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _styledComponents = _interopRequireDefault(require("styled-components"));
+
+var _CaseOne = _interopRequireDefault(require("./../pages/CaseOne"));
+
+var _Container = _interopRequireDefault(require("./../components/Container"));
+
+var _Link = _interopRequireDefault(require("./../components/Link"));
+
+var _Section = _interopRequireDefault(require("./../components/Section"));
+
+var _Button = _interopRequireDefault(require("./../components/Button"));
+
+var _Typography = require("./../components/Typography");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _templateObject3() {
+  var data = _taggedTemplateLiteral(["\ndisplay:inline-block;\nmargin-right:20px;\n"]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  var data = _taggedTemplateLiteral(["\nmargin-bottom:20px;\nvertical-align:middle;\ndisplay: inline-block;"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n  padding-top: 120px;\n  padding-bottom: 80px;\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+var AboutWrapper = (0, _styledComponents.default)(_Section.default)(_templateObject()); // Using Button component but changing the element to 'a'
+
+var Case = _Button.default.withComponent('a');
+
+var Case1 = (0, _styledComponents.default)(Case)(_templateObject2());
+var Sub = (0, _styledComponents.default)(_Typography.Subheading)(_templateObject3());
 
 var About =
 /*#__PURE__*/
@@ -32489,9 +32680,23 @@ function (_React$Component) {
   _createClass(About, [{
     key: "render",
     value: function render() {
-      return _react.default.createElement(_Section.default, {
-        centered: true
-      }, _react.default.createElement(_Container.default, null, _react.default.createElement(_Typography.Subheading, null, "Jared Bartlett"), _react.default.createElement(_Typography.Heading, null, "About Me"), _react.default.createElement(_Typography.Text, null, "I am a digital designer and developer with 20 years of experience developing websites, brands, print, and advertising. I studied Industrial & Transportation Design at Center For Creative Studies (CCS) in Detroit, MI."), _react.default.createElement(_Typography.Text, null, "I operated a successful digital creative agency for 16 years in Arizona before re-joining the automotive world to design marketing materials and software for industry-leading automotive CRM software company, Elead1One."), _react.default.createElement(_Typography.Text, null, "I am now developing a nodejs-based email marketing templating automation tool call Automail that compiles Automotive Sales and Fixed-Ops offers into modular template components. Automail has drastically increased productivity and virtually eliminated costly mistakes commonly made while hand-building email marketing materials."), _react.default.createElement("a", {
+      return _react.default.createElement(AboutWrapper, null, _react.default.createElement(_Container.default, null, _react.default.createElement(_Typography.Heading, null, "Jared Bartlett"), _react.default.createElement(Sub, null, "About Me"), _react.default.createElement(_Typography.Text, null, "I am a UX designer and developer with 20 years of experience developing websites, brands, print, and advertising. I studied Industrial & Transportation Design at Center For Creative Studies (CCS) in Detroit, MI."), _react.default.createElement(_Typography.Text, null, "I operated a successful digital creative agency for 16 years in Arizona before re-joining the automotive world to design marketing materials and software for industry-leading automotive CRM software company, Elead1One."), _react.default.createElement(_Typography.Text, null, "I am currently developing a nodejs-based email marketing templating automation tool call Automail that compiles Automotive Sales and Fixed-Ops offers into modular template components. Automail has drastically increased productivity and virtually eliminated costly mistakes commonly made while hand-building email marketing materials.")), _react.default.createElement(_Container.default, null, _react.default.createElement(Sub, null, "Approach To UX"), " ", _react.default.createElement(Case1, {
+        href: "/CaseOne"
+      }, "Case Study"), _react.default.createElement(_Container.default, {
+        bg: true
+      }, _react.default.createElement("ul", null, _react.default.createElement("li", null, "Research and Analytics"), _react.default.createElement("li", null, "Reinforce The Brand"), _react.default.createElement("li", null, "Trigger Wakefullness (RAS)"), _react.default.createElement("li", null, "Engagement Hook"), _react.default.createElement("li", null, "Elevate Value Perceptions"), _react.default.createElement("li", null, "Reduce Perceptions of Risk"))), _react.default.createElement(_Typography.Minorheading, null, "Research and Analytics"), _react.default.createElement(_Typography.Text, null, "It's easy to rely on past experience and gut feelings to make UX decisions but that isn't a very informed process and the stakes are too high to get it wrong. UX is a cycle of measurement, development, deployment, analysis and augmentation. This iterative process leads to intelligent and highly optimized user experiences."), _react.default.createElement(_Typography.Text, {
+        nopad: true
+      }, _react.default.createElement(_Typography.Highlight, null, "UX Value"), "Data dictates decisions. Every decision we make is a product of empirical and qualitative data gathering. The more data we gather the more informed our analysis becomes. The quality of our analysis is paramount to productive decisions. We can use this intelligence to accurately and effectively develop experiences for users."), _react.default.createElement(_Typography.Minorheading, null, "Reinforce The Brand"), _react.default.createElement(_Typography.Text, null, "A brand is built upon \"Brand Sentiment\" or the sum-total of a collection of experiences a customer or user has with a brand. Often a customers experience begins and ends with interactions online, whether by way of product research or direct interaction with a brands website. "), _react.default.createElement(_Typography.Text, {
+        nopad: true
+      }, _react.default.createElement(_Typography.Highlight, null, "UX Value"), "My approach to UX is informed first by the principles of brand development and permeates all levels of design and development. While design, decoration, and innovative interfaces make for fun projects and portfolio pieces, a designer must critically examine the impact a design decision has on the users perception of the brand."), _react.default.createElement(_Typography.Minorheading, null, "Trigger Wakefullness (RAS)"), _react.default.createElement(_Typography.Text, null, "Human primitive instincts provide a mechanism for recognizing danger, and opportunity called a \"Reticular Activator System\" (RAS) Our minds aren't programmed to pay attention to all things at all times so the reticular activator his serves as a radar constantly running in the background. RAS switches our brains between passive awareness and active wakefulness. I call the triggers to this system \"Hot-buttons\". For instance if I called you by your first name you would become alert and seek more information about what alerted you and why. "), _react.default.createElement(_Typography.Text, {
+        nopad: true
+      }, _react.default.createElement(_Typography.Highlight, null, "UX Value"), "We can use RAS to get the attention of the user by leveraging visuals, layouts, and graphics as hot-buttons that trigger alertness. "), _react.default.createElement(_Typography.Minorheading, null, "Hook Engagement"), _react.default.createElement(_Typography.Text, null, "Imagine being in a busy place like an airport someone says triggers your RAS with your first name as a hot-button. As mentioned above you'd seek information about what and why someone might be calling your attention. But what happens if no one approaches you and you find no further information about it? That's right, You dismiss the alert and continue on your way. This is due to a lack of \"Engagement\". "), _react.default.createElement(_Typography.Text, {
+        nopad: true
+      }, _react.default.createElement(_Typography.Highlight, null, "UX Value"), "We must not settle for simply getting attention. We have to engage the user in a dialogue about the value of the product, service, or whatever the next step may be. This occurs usually in the form a quantified value statement like \"Our product will make you 30% happier, find out how - Take Action Here.\" "), _react.default.createElement(_Typography.Minorheading, null, "Elevate Value Perceptions"), _react.default.createElement(_Typography.Text, null, "Here's where the real work get's done. We must layout a convincing case to the user why the value of the product, service, or effort to take the next step is worth more than the value of their money, time, or energy."), _react.default.createElement(_Typography.Text, {
+        nopad: true
+      }, _react.default.createElement(_Typography.Highlight, null, "UX Value"), "We have to make this part as easy to consume as possible and get out of the way. "), _react.default.createElement(_Typography.Minorheading, null, "Reduce Perceptions of Risk"), _react.default.createElement(_Typography.Text, null, "We are primitively wired for self-preservation although we may sometimes act contrary to our instincts. This means we are keenly aware of risk and we constantly seek information to mitigate the risks of our actions. "), _react.default.createElement(_Typography.Text, {
+        nopad: true
+      }, _react.default.createElement(_Typography.Highlight, null, "UX Value"), "We have to address the perceived risks and prepare methods for the user to alleviate the anxiety of harm. The effects of this cannot be understated. Greater perceived risk elevates the level of perceived value we must build to make it worth the transaction. Risk lengthens sales cycles, increases the cost of marketing and generally makes it difficult to achieve your goals. ")), _react.default.createElement(_Container.default, null, _react.default.createElement("a", {
         href: "mailto:jared@rzn8.com"
       }, "jared@rzn8.com")));
     }
@@ -32501,7 +32706,7 @@ function (_React$Component) {
 }(_react.default.Component);
 
 exports.default = About;
-},{"react":"../node_modules/react/index.js","styled-components":"../node_modules/styled-components/dist/styled-components.es.js","./../components/Container":"App/components/Container.js","./../components/Link":"App/components/Link.js","./../components/Section":"App/components/Section.js","./../components/Typography":"App/components/Typography.js"}],"App/pages/Portfolio.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","styled-components":"../node_modules/styled-components/dist/styled-components.es.js","./../pages/CaseOne":"App/pages/CaseOne.js","./../components/Container":"App/components/Container.js","./../components/Link":"App/components/Link.js","./../components/Section":"App/components/Section.js","./../components/Button":"App/components/Button.js","./../components/Typography":"App/components/Typography.js"}],"App/pages/Portfolio.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -32520,6 +32725,8 @@ var _Link = _interopRequireDefault(require("./../components/Link"));
 var _Section = _interopRequireDefault(require("./../components/Section"));
 
 var _Typography = require("./../components/Typography");
+
+var _Button = _interopRequireDefault(require("./../components/Button"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -32541,8 +32748,28 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
-function _templateObject4() {
+function _templateObject6() {
   var data = _taggedTemplateLiteral(["\n  max-width: 100%;\n  object-fit: contain;\n"]);
+
+  _templateObject6 = function _templateObject6() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject5() {
+  var data = _taggedTemplateLiteral(["\nmargin-bottom:20px;\nvertical-align:middle;\ndisplay: inline-block;"]);
+
+  _templateObject5 = function _templateObject5() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject4() {
+  var data = _taggedTemplateLiteral(["\ndisplay:inline-block;\nmargin-right:20px;\n"]);
 
   _templateObject4 = function _templateObject4() {
     return data;
@@ -32589,7 +32816,13 @@ var PortfolioGrid = _styledComponents.default.div(_templateObject2());
 
 var PortfolioItem = _styledComponents.default.a(_templateObject3());
 
-var PortfolioItemThumbnail = _styledComponents.default.img(_templateObject4());
+var Sub = (0, _styledComponents.default)(_Typography.Subheading)(_templateObject4()); // Using Button component but changing the element to 'a'
+
+var Case = _Button.default.withComponent('a');
+
+var Case1 = (0, _styledComponents.default)(Case)(_templateObject5());
+
+var PortfolioItemThumbnail = _styledComponents.default.img(_templateObject6());
 
 var a = ["American-Racing-Packaging.jpg", "American-Racing.jpg", "Arnett_web.jpg", "AZScooter_Web.png", "AzScooter-Logo.png", "AZTECH_Advert.png", "BinaryOffice.png", "BurningScorpion.png", "CHW_Posters.jpg", "Cinnamon-Roasted.png", "DefensePest.png", "Designr1_Web.png", "EZPHX_logo.png", "FED-Logo.png", "Finlinson.png", "Finlinsonproperties_web.png", "Florence-Econimic-Development-Website.jpg", "Florence-Economic-Development.jpg", "FlorenceChamber.png", "GlobeCorproation_Web.png", "Healthfoodie.png", "Heritage.jpg", "improveCME_logo.png", "ImproveCME.png", "Longden_web.png", "MealFactory.png", "MontiRugs.jpg", "NHFF_Web.jpg", "NutritionGiants.jpg", "PalmWestLeather.jpg", "Perfect-Skin-Laser-Center.jpg", "photomatronic.png", "Pierpont.png", "PolkadotPosh.png", "PremierKitchen.jpg", "QueenCreekAccounting.png", "QueenCreekDental.png", "ReedFamilyVision.png", "Reyes-Logo.png", "Rinaldi_adv.jpg", "Rinaldi-Smile.jpg", "RunFatBoy.png", "Scottsdale.jpg", "SealOutScorpions.png", "Shelby.jpg", "SteelInnovations_Web.jpg", "Stoopid_tree.png", "Summit-Asset.png", "SWF_Brochure.png", "SWF-Logo.png", "SYAP.png", "Syrus-Logo.jpg", "Tassi_web.jpg", "Tourism-Brochure.jpg", "Vaquero-Estates.png", "vGas_Packaging.png", "VictoryAngelFilms-300x300.png", "WhiteFox.png", "Wonbid.jpg", "ZipsEnergy-Poster.png"];
 
@@ -32607,7 +32840,9 @@ function (_React$Component) {
   _createClass(Portfolio, [{
     key: "render",
     value: function render() {
-      return _react.default.createElement(PortfolioWrapper, null, _react.default.createElement(_Container.default, null, _react.default.createElement(_Typography.Subheading, null, "Jared Bartlett"), _react.default.createElement(_Typography.Heading, null, "My work"), _react.default.createElement(_Typography.Text, null, "Selected examples of my work. If you want to see more, drop me an email."), _react.default.createElement(PortfolioGrid, null, a.map(function (i) {
+      return _react.default.createElement(PortfolioWrapper, null, _react.default.createElement(_Container.default, null, _react.default.createElement(_Typography.Heading, null, "Jared Bartlett"), _react.default.createElement(Sub, null, "My Work"), _react.default.createElement(Case1, {
+        href: "/CaseOne"
+      }, "Case Study"), _react.default.createElement(_Typography.Text, null, "Selected examples of my work. If you want to see more, drop me an email."), _react.default.createElement(PortfolioGrid, null, a.map(function (i) {
         //const string = "./../assets/portfolio/AZScooter_Web.png";
         var path = "http://www.rzn8.com/portfolio/" + i;
         return _react.default.createElement(PortfolioItem, {
@@ -32627,7 +32862,7 @@ function (_React$Component) {
 }(_react.default.Component);
 
 exports.default = Portfolio;
-},{"react":"../node_modules/react/index.js","styled-components":"../node_modules/styled-components/dist/styled-components.es.js","./../components/Container":"App/components/Container.js","./../components/Link":"App/components/Link.js","./../components/Section":"App/components/Section.js","./../components/Typography":"App/components/Typography.js"}],"App/components/AwesomeIcon.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","styled-components":"../node_modules/styled-components/dist/styled-components.es.js","./../components/Container":"App/components/Container.js","./../components/Link":"App/components/Link.js","./../components/Section":"App/components/Section.js","./../components/Typography":"App/components/Typography.js","./../components/Button":"App/components/Button.js"}],"App/components/AwesomeIcon.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -32735,7 +32970,7 @@ function (_React$Component) {
         centered: true
       }, _react.default.createElement(_Container.default, null, _react.default.createElement(_Typography.Heading, null, "Say Hello"), _react.default.createElement(_Typography.Text, null, "I'd love to discuss new opportunities. If you are interested in a new project, collaboration, or just to chat, feel free to contact me."), _react.default.createElement(ContactLink, {
         href: "mailto:jared@rzn8.com"
-      }, "jared@jared.com"), _react.default.createElement(_Typography.Text, null, "Follow me on the web:"), _react.default.createElement(SocialMediaList, null, _react.default.createElement("li", null, _react.default.createElement(_Link.default, {
+      }, "jared@rzn8.com"), _react.default.createElement(_Typography.Text, null, "Follow me on the web:"), _react.default.createElement(SocialMediaList, null, _react.default.createElement("li", null, _react.default.createElement(_Link.default, {
         href: "https://www.linkedin.com/in/jaredbartlett/"
       }, _react.default.createElement(_AwesomeIcon.default, {
         icon: "linkedin"
@@ -32759,7 +32994,573 @@ function (_React$Component) {
 }(_react.default.Component);
 
 exports.default = Contact;
-},{"react":"../node_modules/react/index.js","styled-components":"../node_modules/styled-components/dist/styled-components.es.js","./../components/AwesomeIcon":"App/components/AwesomeIcon.js","./../components/Container":"App/components/Container.js","./../components/Link":"App/components/Link.js","./../components/Section":"App/components/Section.js","./../components/Typography":"App/components/Typography.js"}],"App/components/Nav.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","styled-components":"../node_modules/styled-components/dist/styled-components.es.js","./../components/AwesomeIcon":"App/components/AwesomeIcon.js","./../components/Container":"App/components/Container.js","./../components/Link":"App/components/Link.js","./../components/Section":"App/components/Section.js","./../components/Typography":"App/components/Typography.js"}],"App/components/Skill.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireWildcard(require("react"));
+
+var _styledComponents = _interopRequireDefault(require("styled-components"));
+
+var _propTypes = _interopRequireDefault(require("prop-types"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
+
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n& :before{\n\tcontent:\"- \";\n}\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+var SkillItem = _styledComponents.default.div(_templateObject());
+
+function Skill(props) {
+  return _react.default.createElement(SkillItem, {
+    className: "skill"
+  }, _react.default.createElement("span", null, props.name));
+}
+
+Skill.propTypes = {
+  name: _propTypes.default.string.isRequired
+};
+var _default = Skill;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js","styled-components":"../node_modules/styled-components/dist/styled-components.es.js","prop-types":"../node_modules/prop-types/index.js"}],"App/components/SkillList.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _styledComponents = _interopRequireDefault(require("styled-components"));
+
+var _Skill = _interopRequireDefault(require("./Skill"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n  padding: 8px 12px;\n  font-size: 16px;\n  font-weight: normal;\n  text-decoration: none;\n  color: #666;\n  display:inline-block;\n  margin-right: 32px;\n  vertical-align:top;\n\n   /* Breakpoint for tablets */\n  @media (min-width: 576px) {\n\n      color:#666;\n  \n  }\n\n  /* Breakpoint for small desktops */\n  @media (min-width: 768px) {\n    font-size:14px ;\n    margin-right:0;\n    max-width:33%;\n    color:#666;\n  }\n\n  /* Breakpoint for medium desktops */\n  @media (min-width: 992px) {\n     max-width:33%;\n     font-size:16px;\n     margin-right:32px;\n      color:#666;\n  }\n\n  /* Breakpoint for large desktops and HD devices */\n  @media (min-width: 1200px) {\n     max-width:33%;\n     margin-right:50px;\n      color:#666;\n  }\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+var List = _styledComponents.default.div.attrs({
+  className: "left"
+})(_templateObject());
+
+function SkillList(props) {
+  return _react.default.createElement(List, {
+    className: props.className
+  }, _react.default.createElement("h2", null, props.title), props.skills.map(function (c) {
+    return _react.default.createElement(_Skill.default, {
+      key: c.id,
+      name: c.name
+    });
+  }));
+}
+
+var _default = SkillList;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js","styled-components":"../node_modules/styled-components/dist/styled-components.es.js","./Skill":"App/components/Skill.js"}],"App/components/Experience.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireWildcard(require("react"));
+
+var _styledComponents = _interopRequireDefault(require("styled-components"));
+
+var _propTypes = _interopRequireDefault(require("prop-types"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
+
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n\n\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+var Item = _styledComponents.default.li(_templateObject());
+
+function Experience(props) {
+  return _react.default.createElement(Item, null, props.name);
+}
+
+Experience.propTypes = {
+  name: _propTypes.default.string.isRequired
+};
+var _default = Experience;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js","styled-components":"../node_modules/styled-components/dist/styled-components.es.js","prop-types":"../node_modules/prop-types/index.js"}],"App/components/ExperienceList.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _styledComponents = _interopRequireDefault(require("styled-components"));
+
+var _Experience = _interopRequireDefault(require("./Experience"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\ncolor:#666;\n& h2{\n  font-size:20px;\n  text-transform:uppercase;\n  & span{\n    font-size:14px;\n    font-weight:normal;\n    \n  }\n}\n& h3{\n    font-size:16px;\n    font-weight:normal;\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+var Exp = _styledComponents.default.div(_templateObject());
+
+function ExperienceList(props) {
+  return _react.default.createElement(Exp, null, _react.default.createElement("h2", null, " ", props.emp, ", ", _react.default.createElement("span", null, props.location, ", ", props.date)), _react.default.createElement("h3", null, props.role), _react.default.createElement("ul", null, props.skills.map(function (c) {
+    return _react.default.createElement(_Experience.default, {
+      key: c.id,
+      name: c.name
+    });
+  })));
+}
+
+var _default = ExperienceList;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js","styled-components":"../node_modules/styled-components/dist/styled-components.es.js","./Experience":"App/components/Experience.js"}],"App/pages/Resume.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _styledComponents = _interopRequireDefault(require("styled-components"));
+
+var _Container = _interopRequireDefault(require("./../components/Container"));
+
+var _Link = _interopRequireDefault(require("./../components/Link"));
+
+var _Section = _interopRequireDefault(require("./../components/Section"));
+
+var _Typography = require("./../components/Typography");
+
+var _SkillList = _interopRequireDefault(require("./../components/SkillList"));
+
+var _ExperienceList = _interopRequireDefault(require("./../components/ExperienceList"));
+
+var _Button = _interopRequireDefault(require("./../components/Button"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _templateObject3() {
+  var data = _taggedTemplateLiteral(["\n  padding-top: 120px;\n  padding-bottom: 80px;\n"]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  var data = _taggedTemplateLiteral(["\nmargin-bottom:20px;\nvertical-align:middle;"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\ndisplay:inline-block;\nmargin-right:20px;\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+var Download = _Button.default.withComponent('a');
+
+var Sub = (0, _styledComponents.default)(_Typography.Subheading)(_templateObject());
+var Download1 = (0, _styledComponents.default)(Download)(_templateObject2());
+var ResumeWrapper = (0, _styledComponents.default)(_Section.default)(_templateObject3());
+var skills = [{
+  id: 1,
+  name: "Brand / Identity"
+}, {
+  id: 2,
+  name: "Print Media"
+}, {
+  id: 3,
+  name: "Graphic Design"
+}, {
+  id: 4,
+  name: "Ad Campaigns"
+}, {
+  id: 5,
+  name: "Media Buying"
+}, {
+  id: 6,
+  name: "Broadcast Media"
+}, {
+  id: 7,
+  name: "Outdoor Advertising"
+}, {
+  id: 8,
+  name: "Copywriting"
+}, {
+  id: 9,
+  name: "Photography"
+}];
+var skillsb = [{
+  id: 10,
+  name: "LAMP Server Administration"
+}, {
+  id: 11,
+  name: "UI / UX Design & Development"
+}, {
+  id: 12,
+  name: "eCommerce Development"
+}, {
+  id: 13,
+  name: "Social Media Development"
+}, {
+  id: 14,
+  name: "Global / Local Search Marketing"
+}, {
+  id: 15,
+  name: "Statistical Performance Tracking"
+}, {
+  id: 16,
+  name: "Conversion Optimization"
+}, {
+  id: 17,
+  name: "CRM API Integration "
+}, {
+  id: 18,
+  name: "CRM and Marketing Automation"
+}, {
+  id: 19,
+  name: "SaaS Development"
+}];
+var skillsc = [{
+  id: 21,
+  name: "Manage Creative Teams"
+}, {
+  id: 22,
+  name: "Estimate Work and Assemble Resources"
+}, {
+  id: 23,
+  name: "Offshore Team Management"
+}, {
+  id: 24,
+  name: "Leadership Skills"
+}, {
+  id: 25,
+  name: "Account Management"
+}, {
+  id: 26,
+  name: "Vendor Relationships"
+}, {
+  id: 27,
+  name: "Contract Negotiation"
+}];
+var Dev = [{
+  id: 1,
+  name: "Command Line / Terminal"
+}, {
+  id: 2,
+  name: "Sublime Text"
+}, {
+  id: 3,
+  name: "Transmit FTP"
+}, {
+  id: 4,
+  name: "UXPin"
+}, {
+  id: 5,
+  name: "Axure"
+}];
+var Lang = [{
+  id: 1,
+  name: "HTML5"
+}, {
+  id: 2,
+  name: "Sass, Scss"
+}, {
+  id: 3,
+  name: "Javascript"
+}, {
+  id: 4,
+  name: "JSON"
+}, {
+  id: 5,
+  name: "PHP"
+}, {
+  id: 6,
+  name: "ASP.Net"
+}, {
+  id: 7,
+  name: "Python"
+}];
+var Frame = [{
+  id: 1,
+  name: "Node.js"
+}, {
+  id: 2,
+  name: "React"
+}, {
+  id: 3,
+  name: "jQuery"
+}, {
+  id: 4,
+  name: "Foundation"
+}, {
+  id: 5,
+  name: "GrapesJS"
+}, {
+  id: 6,
+  name: "Drupal"
+}, {
+  id: 7,
+  name: "Joomla"
+}, {
+  id: 8,
+  name: "Ruby"
+}, {
+  id: 9,
+  name: "Django"
+}, {
+  id: 10,
+  name: "Magento"
+}];
+var Work1 = [{
+  id: 1,
+  name: "Developed Email Marketing UI/UX Suite for Sonic Automotive."
+}, {
+  id: 5,
+  name: "Developed nodejs-based software to automate production of email marketing materials."
+}, {
+  id: 6,
+  name: "Established processes and project management procedures now in used by the marketing department."
+}, {
+  id: 2,
+  name: "Assembled and managed a remote team of developers to produce 3k unique email templates."
+}, {
+  id: 7,
+  name: "Negotiated vendor contract for 20% under original estimates representing significant savings and profitability."
+}, {
+  id: 3,
+  name: "Traveled in-market to introduced newly developed marketing products and services to Sonic Automotive dealerships in Houston and San Francisco. "
+}, {
+  id: 4,
+  name: "Managed 20 dealership relationships as a marketing consultant."
+}];
+var Work2 = [{
+  id: 1,
+  name: "Managed day to day operations of sales, production and maintenance."
+}, {
+  id: 2,
+  name: "Responsible for strategic planning and execution of creative and technical campaigns."
+}, {
+  id: 3,
+  name: "Serves as chief point of contact for most client relationships, some relationships lasting over a decade since the companies inception."
+}, {
+  id: 4,
+  name: "Interviews and hires comprehensive global creative, administrative and technical teams."
+}, {
+  id: 5,
+  name: "Develop project management software infrastructure and vets all third party software tools."
+}, {
+  id: 6,
+  name: "Provides primary creative and technical direction to production staff."
+}, {
+  id: 7,
+  name: "Creates sales and business development goals and compensation plans."
+}];
+var Work3 = [{
+  id: 1,
+  name: "Designed brand resources for professional sports teams, internet start-ups, and large corporations."
+}, {
+  id: 2,
+  name: "Designed print layouts and marketing collateral for a variety of high level businesses and industries."
+}, {
+  id: 3,
+  name: "Designed UX/UI and programmed websites and software in the emerging web-based marketplace."
+}, {
+  id: 4,
+  name: "Designed exhibits for and installations for professional sports arenas and public concourses."
+}, {
+  id: 5,
+  name: "Designed graphic banners for use in professional sports arenas."
+}, {
+  id: 6,
+  name: "Assembled presentations and resources for sales and campaign pitches to high level clients and sports teams."
+}, {
+  id: 7,
+  name: "Worked with teams of other designers in a competitive atmosphere to deliver cutting edge design and technical solutions to brand and advertising challenges."
+}];
+var EDU = [];
+
+var Resume =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(Resume, _React$Component);
+
+  function Resume() {
+    _classCallCheck(this, Resume);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(Resume).apply(this, arguments));
+  }
+
+  _createClass(Resume, [{
+    key: "render",
+    value: function render() {
+      return _react.default.createElement(ResumeWrapper, null, _react.default.createElement(_Container.default, null, _react.default.createElement(_Typography.Heading, null, "Jared Bartlett"), _react.default.createElement(Sub, null, "Resume"), _react.default.createElement(Download1, {
+        href: "https://www.dropbox.com/s/8bwupmgbs55yw8l/Jared%20Bartlett%20Resume%2012%2018.pdf?dl=0",
+        target: "_blank"
+      }, "Download"), _react.default.createElement(_Typography.Text, null, _react.default.createElement(_Typography.Highlight, null, "Profile"), "Possesses cross-discipline skills providing the ability to give creative as well as technical direction to teams with role-specific skill sets effectively stitching together dissimilar personalities and capabilities. Experience in the creative and technical industries for 20 years ranging from offset printing press operation to web-based software development. Ran a profitable creative marketing and advertising company for 16 years. Programs in a variety of modern programming/scripting languages, frameworks, and platforms. Senior designer with a body of work with a variety of clients including professional sports teams, American racing legends, rock icons, and large national healthcare companies. Experience hiring and managing full-time in-house staff, remote teams of local and offshore developers and designers to complete projects on time and on budget."), _react.default.createElement(_Typography.Text, null, _react.default.createElement(_Typography.Highlight, null, "Objective"), "Develop skillsets working within a formal production lifecycle. Work towards a role as Product Owner to deliver superior products and user experiences.")), _react.default.createElement(_Container.default, {
+        bg: true
+      }, _react.default.createElement(_Typography.Minorheading, null, "Qualifications Highlights"), _react.default.createElement(_SkillList.default, {
+        title: "Creative",
+        className: "left",
+        skills: skills
+      }), _react.default.createElement(_SkillList.default, {
+        title: "Technical",
+        className: "middle",
+        skills: skillsb
+      }), _react.default.createElement(_SkillList.default, {
+        title: "Management",
+        className: "right",
+        skills: skillsc
+      })), _react.default.createElement(_Container.default, null, _react.default.createElement(_Typography.Minorheading, null, "Achievements"), _react.default.createElement(_Typography.Text, null, "Performed brand audit and redesign for American Racing a 50-year-old legacy brand valued at 30 million dollars. New brand identities presented were expected to be durable for the next 50 years of business. "), _react.default.createElement(_Typography.Text, {
+        nopad: true
+      }, _react.default.createElement(_Typography.Highlight, {
+        dark: true
+      }, "Result"), "New brand merchandising and product design yielding greatly increased revenue and refreshed opportunities as well as a stable brand extension to a loyal-but-dated brand following."), _react.default.createElement(_Typography.Text, null, "Directed in-house design team to design and develop brand identities, general print materials, sales collateral, product packaging, exhibits, print advertising, OHH advertising, web display advertising, interior and exterior signage for the 5th largest hospital system in the United States."), _react.default.createElement(_Typography.Text, {
+        nopad: true
+      }, _react.default.createElement(_Typography.Highlight, {
+        dark: true
+      }, "Result"), "Met and exceeded compliance goals and increased scoring and positive response to by 108% representing an increase above stated desired achievement goals."), _react.default.createElement(_Typography.Text, null, "Developed financial software tracking investment capital with live tracking of calculated interest rates. The system managed investment groups, products, expenses, profitability, and withdrawals. Dynamically generated legal contracts and facilitated secure digital signatures. "), _react.default.createElement(_Typography.Text, {
+        nopad: true
+      }, _react.default.createElement(_Typography.Highlight, {
+        dark: true
+      }, "Result"), "In addition to it\u2019s primary function managing $35,000,000 of investment capital this system was used by the Department of Justice as a modeling aid in the prosecution of criminal entities involved in financial fraud schemes."), _react.default.createElement(_Typography.Text, null, "Developed an e-commerce system for an under-performing product online. Deployed advanced tracking software with custom programmed API interface calls to extend the software and identify sales and performance problems. Redesigned the site interface and the e-commerce software to allow for role-based tracking of retail and wholesale orders, shipping, pricing and discount policies and capabilities."), _react.default.createElement(_Typography.Text, {
+        nopad: true
+      }, _react.default.createElement(_Typography.Highlight, {
+        dark: true
+      }, "Result"), "This sales channel has yielded 1.25 million dollars consistently over 5 years.")), _react.default.createElement(_Container.default, {
+        bg: true
+      }, _react.default.createElement(_Typography.Minorheading, null, "Relevant Applications & Capabilities"), _react.default.createElement(_SkillList.default, {
+        medium: true,
+        title: ["Development", _react.default.createElement("br", null), "Tools"],
+        skills: Dev
+      }), _react.default.createElement(_SkillList.default, {
+        medium: true,
+        title: ["Languages", _react.default.createElement("br", null), "Formats"],
+        skills: Lang
+      }), _react.default.createElement(_SkillList.default, {
+        medium: true,
+        title: ["Frameworks", _react.default.createElement("br", null), " & Libraries"],
+        skills: Frame
+      })), _react.default.createElement(_Container.default, null, _react.default.createElement(_Typography.Minorheading, null, "Work Experience"), _react.default.createElement(_ExperienceList.default, {
+        emp: "Elead1One",
+        location: "Valdosta, GA",
+        date: "2017-Present",
+        role: "Marketing & Software Development",
+        skills: Work1
+      }), _react.default.createElement(_ExperienceList.default, {
+        emp: "RZN8 Media",
+        location: "Phoenix, AZ",
+        date: "2002-2017",
+        role: "Creative & Technical Director, Principal",
+        skills: Work2
+      }), _react.default.createElement(_ExperienceList.default, {
+        emp: "Campbell Fisher Design (CFD)",
+        location: "Phoenix, AZ",
+        date: "2000-2002",
+        role: "UI/UX Designer",
+        skills: Work3
+      })), _react.default.createElement(_Container.default, null, _react.default.createElement(_Typography.Minorheading, null, "Education"), _react.default.createElement(_ExperienceList.default, {
+        emp: "Center For Creative Studies",
+        location: "Detroit, MI",
+        date: "1995-1996",
+        role: "BFA Industrial / Automotive Design",
+        skills: EDU
+      })), _react.default.createElement(_Container.default, null, _react.default.createElement("a", {
+        href: "mailto:jared@rzn8.com"
+      }, "jared@rzn8.com")));
+    }
+  }]);
+
+  return Resume;
+}(_react.default.Component);
+
+exports.default = Resume;
+},{"react":"../node_modules/react/index.js","styled-components":"../node_modules/styled-components/dist/styled-components.es.js","./../components/Container":"App/components/Container.js","./../components/Link":"App/components/Link.js","./../components/Section":"App/components/Section.js","./../components/Typography":"App/components/Typography.js","./../components/SkillList":"App/components/SkillList.js","./../components/ExperienceList":"App/components/ExperienceList.js","./../components/Button":"App/components/Button.js"}],"App/components/Nav.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -32796,7 +33597,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
 
 function _templateObject6() {
-  var data = _taggedTemplateLiteral(["\n  & + & {\n    margin-top: 12px;\n  }\n\n  @media (min-width: 480px) {\n    & + & {\n      margin-top: 0;\n      margin-left: 32px;\n    }\n  }\n\n  a {\n    font-size: 16px;\n    font-weight: bold;\n    text-decoration: none;\n    color: #666;\n    transition: color .25s ease-in-out;\n\n    &:hover {\n      color: #888;\n    }\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  & + & {\n    margin-top: 12px;\n  }\n\n  @media (min-width: 480px) {\n    & + & {\n      margin-top: 0;\n      margin-left: 32px;\n    }\n  }\n\n  a {\n    font-size: 16px;\n    font-weight: bold;\n    text-decoration: none;\n    color: #78BB2C;\n    text-transform:uppercase;\n    transition: color .25s ease-in-out;\n\n    &:hover {\n      color: #888;\n    }\n  }\n"]);
 
   _templateObject6 = function _templateObject6() {
     return data;
@@ -32806,7 +33607,7 @@ function _templateObject6() {
 }
 
 function _templateObject5() {
-  var data = _taggedTemplateLiteral(["\n  margin: 0;\n  display: flex;\n  overflow: hidden;\n  flex-direction: column;\n  justify-content: flex-end;\n  list-style-type: none;\n  height: auto;\n  max-height: 0;\n\n  @media (min-width: 480px) {\n    flex-direction: row;\n    justify-content: flex-end;\n    max-height: 1000px;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  margin: 0;\n  display: flex;\n  overflow: hidden;\n  flex-direction: column;\n  justify-content: flex-end;\n  list-style-type: none;\n  height: auto;\n  max-height: 0;\n\n  @media (min-width: 515px) {\n    flex-direction: row;\n    justify-content: flex-end;\n    max-height: 1000px;\n  }\n"]);
 
   _templateObject5 = function _templateObject5() {
     return data;
@@ -32816,7 +33617,7 @@ function _templateObject5() {
 }
 
 function _templateObject4() {
-  var data = _taggedTemplateLiteral(["\n      ul {\n        position: absolute;\n        top: 64px;\n        max-height: 1000px;\n      }\n    "]);
+  var data = _taggedTemplateLiteral(["\n      ul {\n        position: absolute;\n        top: 64px;\n        max-height: 1000px;\n        background-color:rgba(255,255,255,.9);\n        padding:20px;\n      }\n    "]);
 
   _templateObject4 = function _templateObject4() {
     return data;
@@ -32826,7 +33627,7 @@ function _templateObject4() {
 }
 
 function _templateObject3() {
-  var data = _taggedTemplateLiteral(["\n  padding: 16px;\n  display: flex;\n  justify-content: flex-end;\n\n  @media (max-width: 479px) {\n    flex-direction: column;\n    align-items: flex-end;\n\n    /* If navigation is open (show is true) */\n    ", "\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  padding: 16px;\n  display: flex;\n  justify-content: flex-end;\n\n  @media (max-width: 515px) {\n    flex-direction: column;\n    align-items: flex-end;\n\n    /* If navigation is open (show is true) */\n    ", "\n  }\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -32836,7 +33637,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n  position: fixed;\n  top: 0;\n  left: 0;\n  z-index: 999;\n  width: 100%;\n  background-color:rgba(255,255,255,0.85);\n"]);
+  var data = _taggedTemplateLiteral(["\n  position: fixed;\n  top: 0;\n  left: 0;\n  z-index: 999;\n  width: 100%;\n  background-color:rgba(255,255,255,0.90);\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -32846,7 +33647,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  @media (min-width: 479px) {\n    display: none;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\nmargin-right:40px;\n  @media (min-width: 515px) {\n    display: none;\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -32905,9 +33706,11 @@ function (_React$Component) {
         href: "/"
       }, "Home")), _react.default.createElement(NavItem, null, _react.default.createElement("a", {
         href: "/about"
-      }, "About")), _react.default.createElement(NavItem, null, _react.default.createElement("a", {
+      }, "UX Approach")), _react.default.createElement(NavItem, null, _react.default.createElement("a", {
         href: "/portfolio"
       }, "Portfolio")), _react.default.createElement(NavItem, null, _react.default.createElement("a", {
+        href: "/resume"
+      }, "Resume")), _react.default.createElement(NavItem, null, _react.default.createElement("a", {
         href: "/contact"
       }, "Contact")))));
     }
@@ -32936,6 +33739,10 @@ var _About = _interopRequireDefault(require("./pages/About"));
 var _Portfolio = _interopRequireDefault(require("./pages/Portfolio"));
 
 var _Contact = _interopRequireDefault(require("./pages/Contact"));
+
+var _Resume = _interopRequireDefault(require("./pages/Resume"));
+
+var _CaseOne = _interopRequireDefault(require("./pages/CaseOne"));
 
 var _Nav = _interopRequireDefault(require("./components/Nav"));
 
@@ -32986,6 +33793,12 @@ function (_React$Component) {
         path: "/portfolio",
         component: _Portfolio.default
       }), _react.default.createElement(_reactRouterDom.Route, {
+        path: "/resume",
+        component: _Resume.default
+      }), _react.default.createElement(_reactRouterDom.Route, {
+        path: "/CaseOne",
+        component: _CaseOne.default
+      }), _react.default.createElement(_reactRouterDom.Route, {
         path: "/contact",
         component: _Contact.default
       }));
@@ -32996,7 +33809,7 @@ function (_React$Component) {
 }(_react.default.Component);
 
 exports.default = Main;
-},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/es/index.js","./pages/Home":"App/pages/Home.js","./pages/About":"App/pages/About.js","./pages/Portfolio":"App/pages/Portfolio.js","./pages/Contact":"App/pages/Contact.js","./components/Nav":"App/components/Nav.js"}],"index.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/es/index.js","./pages/Home":"App/pages/Home.js","./pages/About":"App/pages/About.js","./pages/Portfolio":"App/pages/Portfolio.js","./pages/Contact":"App/pages/Contact.js","./pages/Resume":"App/pages/Resume.js","./pages/CaseOne":"App/pages/CaseOne.js","./components/Nav":"App/components/Nav.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
@@ -33059,7 +33872,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53161" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56749" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

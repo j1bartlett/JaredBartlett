@@ -73,9 +73,9 @@ export default class Home extends React.Component {
         <Container>
           <Heading>Jared Bartlett</Heading>
 
-          <Subheading>Designer / Developer</Subheading>
+          <Subheading>UX Designer / Developer</Subheading>
 
-          <HomeButton href="/portfolio">My work</HomeButton>
+          <HomeButton href="/portfolio">My work</HomeButton><HomeButton href="/resume">Resume</HomeButton>
         </Container>
       </HomeWrapper>
     )

@@ -4,7 +4,8 @@ import styled, { css } from 'styled-components'
 import Button from './Button'
 
 const NavButton = styled(Button)`
-  @media (min-width: 479px) {
+margin-right:40px;
+  @media (min-width: 515px) {
     display: none;
   }
 `
@@ -14,14 +15,14 @@ const Header = styled.header`
   left: 0;
   z-index: 999;
   width: 100%;
-  background-color:rgba(255,255,255,0.85);
+  background-color:rgba(255,255,255,0.90);
 `
 const NavWrapper = styled.nav`
   padding: 16px;
   display: flex;
   justify-content: flex-end;
 
-  @media (max-width: 479px) {
+  @media (max-width: 515px) {
     flex-direction: column;
     align-items: flex-end;
 
@@ -31,6 +32,8 @@ const NavWrapper = styled.nav`
         position: absolute;
         top: 64px;
         max-height: 1000px;
+        background-color:rgba(255,255,255,.9);
+        padding:20px;
       }
     `}
   }
@@ -45,7 +48,7 @@ const NavList = styled.ul`
   height: auto;
   max-height: 0;
 
-  @media (min-width: 480px) {
+  @media (min-width: 515px) {
     flex-direction: row;
     justify-content: flex-end;
     max-height: 1000px;
@@ -67,7 +70,8 @@ const NavItem = styled.li`
     font-size: 16px;
     font-weight: bold;
     text-decoration: none;
-    color: #666;
+    color: #78BB2C;
+    text-transform:uppercase;
     transition: color .25s ease-in-out;
 
     &:hover {
@@ -104,7 +108,7 @@ export default class Nav extends React.Component {
             </NavItem>
 
             <NavItem>
-              <a href="/about">About</a>
+              <a href="/about">UX Approach</a>
             </NavItem>
 
             <NavItem>
@@ -112,6 +116,9 @@ export default class Nav extends React.Component {
             </NavItem>
 
             <NavItem>
+              <a href="/resume">Resume</a>
+            </NavItem>
+             <NavItem>
               <a href="/contact">Contact</a>
             </NavItem>
         </NavList>

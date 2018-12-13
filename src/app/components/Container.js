@@ -1,5 +1,5 @@
 // Container.js
-import styled from 'styled-components'
+import styled, {css} from 'styled-components'
 
 const Container = styled.div`
   padding-right: 15px;
@@ -27,6 +27,11 @@ const Container = styled.div`
   @media (min-width: 1200px) {
     max-width: 1140px;
   }
+  ${props => props.bg && css`
+    background-color:#efefef;
+    padding:40px;
+    margin-bottom:20px;
+  `}
 `
 
 export default Container
